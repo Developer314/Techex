@@ -26,6 +26,21 @@ data:
         {{/other_meta_tags}}
         
         {{/if}}
+
+    {{if og_title}}
+    <meta property="og:title" content="{{og_title}}" />
+    {{/if}}
+    {{if og_description}}
+    <meta property="og:description" content="{{og_description}}" />
+    {{/if}}
+    {{if og_image}}
+    <meta property="og:image" content="{{og_image}}" />
+    {{/if}}
+
+
+
+
+
         
         {{page_header_extra}}
         
