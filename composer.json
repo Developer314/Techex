@@ -1,9 +1,9 @@
 {
-    "name": "my-vendor-name/stater_kit",
+    "name": "developer314/techex",
     "extra": {
         "statamic": {
-            "name": "Stater Kit",
-            "description": "Stater Kit starter kit"
+            "name": "Techex Starter Kit",
+            "description": "Techex Starter Kit"
         }
     }
 }
