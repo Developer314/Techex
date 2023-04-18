@@ -1,0 +1,163 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: footer_logo
+        field:
+          mode: list
+          container: assets
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: 'Footer Logo'
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: description
+        field:
+          antlers: false
+          default: 'Sed ut perspiciatis unde omnis natus voluptatem accusa ntiumy doloremque laudantium.omnis natus voluptatem accusa ntiumy doloremque laudantium'
+          display: Description
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: social_icons
+        field:
+          antlers: false
+          default: |-
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                            <a href="#"><i class="fab fa-behance"></i></a>
+                                            <a href="#"><i class="fab fa-youtube"></i></a>
+          display: 'Social Icons'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: box_2
+        field:
+          antlers: false
+          default: |-
+            <div class="wid-title">
+                                            <h4>Company</h4>
+                                        </div>
+                                        <ul>
+                                            <li><a href="about.html">About Us</a></li>
+                                            <li><a href="about.html">Company History</a></li>
+                                            <li><a href="contact.html">Need a Career</a></li>
+                                            <li><a href="project-details.html">Working Process</a></li>
+                                            <li><a href="news.html">Blog Post</a></li>
+                                        </ul>
+          display: 'Box 2'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: box_3
+        field:
+          antlers: false
+          default: |-
+            <div class="wid-title">
+                                            <h4>Company</h4>
+                                        </div>
+                                        <ul>
+                                            <li><a href="about.html">About Us</a></li>
+                                            <li><a href="about.html">Company History</a></li>
+                                            <li><a href="contact.html">Need a Career</a></li>
+                                            <li><a href="project-details.html">Working Process</a></li>
+                                            <li><a href="news.html">Blog Post</a></li>
+                                        </ul>
+          display: 'Box 3'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: box_4
+        field:
+          antlers: true
+          default: |-
+            <div class="single-footer-wid recent_post_widget">
+                                        <div class="wid-title">
+                                            <h4>News News</h4>
+                                        </div>
+                                        <div class="recent-post-list">
+                                            
+                                            {{collection:news limit="2"}}
+                                            <div class="single-recent-post">
+                                                <div class="thumb bg-cover" style="background-image: url('{{image}}');"></div>
+                                                <div class="post-data">
+                                                    
+                                                    <h5><a href="{{url}}">{{title}}</a></h5>
+                                                </div>
+                                            </div>
+                                            {{collection:news}}
+                                        </div>
+                                    </div>
+          display: 'Box 4'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  template:
+    display: Template
+    fields:
+      -
+        handle: template
+        field:
+          antlers: true
+          default: |-
+            <footer class="footer-2 footer-wrap">
+            <div class="footer-widgets">            
+                        <div class="container">
+                            <div class="row justify-content-between">
+                                <div class="col-md-6 col-xl-3 col-12 pr-xl-4">
+                                    <div class="single-footer-wid site_footer_widget">
+                                        <a href="index.html">
+                                            <img src="{{footer:footer_logo}}" alt="">
+                                        </a>
+                                        <p class="mt-4">{{footer:description}}</p>
+                                        <div class="social-link mt-30">
+                                            {{footer:social_icons}}
+                                        </div>
+                                    </div>
+                                </div> <!-- /.col-lg-3 - single-footer-wid -->
+                                <div class="col-md-6 col-xl-2 col-12">                        
+                                    <div class="single-footer-wid">
+                                        {{footer:box_2}}
+                                    </div>
+                                </div> <!-- /.col-lg-3 - single-footer-wid -->
+                                <div class="col-md-6 col-xl-2 col-12">                        
+                                    <div class="single-footer-wid">
+                                        {{footer:box_3}}
+                                    </div>
+                                </div> <!-- /.col-lg-3 - single-footer-wid -->
+                                <div class="col-md-6 col-xl-3 col-12">
+                                    <div class="single-footer-wid recent_post_widget">
+                                        {{footer:box_4}}
+                                    </div>
+                                </div> <!-- /.col-lg-3 - single-footer-wid -->
+                            </div>
+                        </div>
+                    </div>
+            </footer>
+          display: Template
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible

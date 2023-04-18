@@ -1,0 +1,108 @@
+{{ partial:partials/header }}
+
+
+
+
+<section class="team-member-wrapper section-padding">
+        <div class="container">
+            <div class="member-details-wrap">
+                <div class="row justify-content-between">
+
+                    <div class="col-xl-4 col-12 col-lg-6">
+                        <div class="member-card mr-0 mr-xl-3">
+                            <div class="member-photo bg-cover" style="background-image: url('{{image}}')"></div>
+                            <div class="member-info">
+                                <h4>{{title}}</h4>
+                                <p>{{designation}}</p>
+                                <div class="social-link">
+                                    {{social_media}}
+                                    <a href="link" target="_blank"><i class="fab {{icon}}"></i></a>
+                                    {{/social_media}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 mt-5 col-lg-6 col-12 mt-lg-0">
+                        <div class="member-about">
+                            <div class="sec-title">
+                                <h2>About Me</h2>
+                            </div>
+                            {{content}}
+
+                            <div class="sec-title mt-4">
+                                <h2>Contact Me</h2>
+                            </div>
+
+                            <div class="member-contact-info mt-4">
+                                <div class="single-contact-info d-flex">
+                                    <div class="icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="contact-info">
+                                        <p>{{address}}</p>
+                                    </div>
+                                </div>
+                                <div class="single-contact-info d-flex">
+                                    <div class="icon">
+                                        <i class="fas fa-envelope-open-text"></i>
+                                    </div>
+                                    <div class="contact-info">
+                                        <p>{{email}}</p>
+                                    </div>
+                                </div>
+                                <div class="single-contact-info d-flex">
+                                    <div class="icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div class="contact-info">
+                                        <p>{{phone}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 mt-5 col-lg-12 col-12 mt-xl-0">
+                        <div class="member-skills">
+                            <div class="sec-title">
+                                <h2>Skills</h2>
+                            </div>
+                            {{skills}}
+
+                            {{other_skills}}
+                            <div class="single-skill-bar">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h4>{{name}}</h4>
+                                    <span>{{skill_value}}%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: {{skill_value}}%"></div>
+                                </div>
+                            </div>
+                             {{/other_skills}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+{{block_types}}
+{{template}}
+{{/block_types}}
+
+
+
+
+
+
+
+    
+
+
+        
+

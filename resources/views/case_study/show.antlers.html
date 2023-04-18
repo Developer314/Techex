@@ -1,0 +1,98 @@
+{{ partial:partials/header }}
+
+
+
+
+<section class="case-study-post-wrapper section-padding">
+        <div class="container">
+            <div class="case-grid-photos">
+                <div class="single-photo-grid">
+                    <img src="{{main_image}}" alt="">
+                </div>
+                
+                {{additional_images}}
+                <div class="single-photo-grid">
+                    <img src="{{url}}" alt="">
+                </div>
+                {{/additional_images}}
+                
+            </div>
+            <div class="case-contents-wrap">
+                <div class="row">
+                    <div class="col-lg-8 col-12">
+                        <div class="case-details-content mr-0 mr-lg-5">
+                            {{content}}
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <div class="case-info-card">
+                            <div class="case-head bg-cover" style="background-image: url('/assets/img/case/case-head.png')">
+                                <h3>Project Details</h3>
+                            </div>
+                            <div class="project-data">
+                                <div class="single-info-item">
+                                    <div class="left-data">
+                                        Clients
+                                    </div>
+                                    <div class="right-data">
+                                        {{client}}
+                                    </div>
+                                </div>
+                                <div class="single-info-item">
+                                    <div class="left-data">
+                                        Project
+                                    </div>
+                                    <div class="right-data">
+                                        {{client}}
+                                    </div>
+                                </div>
+                                <div class="single-info-item">
+                                    <div class="left-data">
+                                        Service
+                                    </div>
+                                    <div class="right-data">
+                                        {{service}}
+                                    </div>
+                                </div>
+                                <div class="single-info-item">
+                                    <div class="left-data">
+                                        Category
+                                    </div>
+                                    <div class="right-data">
+                                        {{ foreach:category }} {{value:value}} {{ /foreach:category }}
+                                    </div>
+                                </div>
+                                <div class="single-info-item">
+                                    <div class="left-data">
+                                        Date
+                                    </div>
+                                    <div class="right-data">
+                                        {{date}}
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+{{block_types}}
+{{template}}
+{{/block_types}}
+
+
+
+
+
+
+
+    
+
+
+        
+

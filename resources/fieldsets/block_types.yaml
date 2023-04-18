@@ -1,0 +1,2982 @@
+title: 'Block Types'
+fields:
+  -
+    handle: block_types
+    field:
+      collapse: false
+      previews: true
+      sets:
+        home_hero:
+          display: 'Home Hero'
+          fields:
+            -
+              handle: home_hero_style
+              field:
+                options:
+                  hero_1: 'Hero 1'
+                  hero_2: 'Hero 2'
+                  hero_3: 'Hero 3'
+                  hero_4: 'Hero 4'
+                  hero_5: 'Hero 5'
+                  hero_6: 'Hero 6'
+                multiple: false
+                clearable: false
+                searchable: true
+                taggable: false
+                push_tags: false
+                cast_booleans: false
+                default: hero_1
+                display: 'Home Hero Style'
+                type: select
+                icon: select
+                instructions: 'Check <http://techex.revolve314.com>'
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: edit_main_template
+              field:
+                default: false
+                display: 'Edit Main Template'
+                type: toggle
+                icon: toggle
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: true
+            -
+              handle: template
+              field:
+                antlers: true
+                display: 'Main Template'
+                type: textarea
+                icon: textarea
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                if:
+                  edit_main_template: 'equals 1'
+                always_save: true
+                default: |-
+                  {{if home_hero_style == "hero_1"}}
+                  {{hero_1_template}}
+                  {{/if}}
+
+                  {{if home_hero_style == "hero_2"}}
+                  {{hero_2_template}}
+                  {{/if}}
+
+                  {{if home_hero_style == "hero_3"}}
+                  {{hero_3_template}}
+                  {{/if}}
+
+                  {{if home_hero_style == "hero_4"}}
+                  {{hero_4_template}}
+                  {{/if}}
+
+                  {{if home_hero_style == "hero_5"}}
+                  {{hero_5_template}}
+                  {{/if}}
+
+                  {{if home_hero_style == "hero_6"}}
+                  {{hero_6_template}}
+                  {{/if}}
+            -
+              handle: hero_1
+              field:
+                collapse: false
+                previews: true
+                sets:
+                  new_set:
+                    display: 'New Set'
+                    fields:
+                      -
+                        handle: title_1
+                        field:
+                          input_type: text
+                          antlers: false
+                          display: 'Title 1'
+                          type: text
+                          icon: text
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                          default: 'Solutions For'
+                      -
+                        handle: title_2
+                        field:
+                          input_type: text
+                          antlers: false
+                          default: 'IT Business'
+                          display: 'Title 2'
+                          type: text
+                          icon: text
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: title_3
+                        field:
+                          input_type: text
+                          antlers: false
+                          default: 'We Have 25 Years Of Experience In IT Solutions'
+                          display: 'Title 3'
+                          type: text
+                          icon: text
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: button_1_text
+                        field:
+                          input_type: text
+                          antlers: false
+                          default: 'Service we provide'
+                          display: 'Button 1 Text'
+                          type: text
+                          icon: text
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: button_1_link
+                        field:
+                          display: 'Button 1 Link'
+                          type: link
+                          icon: link
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: button_1_target
+                        field:
+                          options:
+                            _self: 'Self Tab'
+                            _blank: 'New Tab'
+                          multiple: false
+                          clearable: false
+                          searchable: true
+                          taggable: false
+                          push_tags: false
+                          cast_booleans: false
+                          default: _self
+                          display: 'Button 1 target'
+                          type: select
+                          icon: select
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: image_1
+                        field:
+                          mode: list
+                          container: assets
+                          restrict: false
+                          allow_uploads: true
+                          show_filename: true
+                          max_files: 1
+                          display: 'Image 1'
+                          type: assets
+                          icon: assets
+                          instructions: 'This Hero Need two Images'
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: image_2
+                        field:
+                          mode: list
+                          container: assets
+                          restrict: false
+                          allow_uploads: true
+                          show_filename: true
+                          max_files: 1
+                          display: 'Image 2'
+                          type: assets
+                          icon: assets
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: button_2_text
+                        field:
+                          input_type: text
+                          antlers: false
+                          default: 'Learn More'
+                          display: 'Button 2 Text'
+                          type: text
+                          icon: text
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: button_2_link
+                        field:
+                          display: 'Button 2 Link'
+                          type: link
+                          icon: link
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: button_2_target
+                        field:
+                          options:
+                            _self: 'Self Tab'
+                            _blank: 'New Tab'
+                          multiple: false
+                          clearable: false
+                          searchable: true
+                          taggable: false
+                          push_tags: false
+                          cast_booleans: false
+                          default: _self
+                          display: 'Button 2 Target'
+                          type: select
+                          icon: select
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                display: 'Hero 1'
+                type: replicator
+                icon: replicator
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                if:
+                  home_hero_style: 'equals hero_1'
+            -
+              handle: hero_2
+              field:
+                collapse: false
+                previews: true
+                sets:
+                  new_set:
+                    display: 'New Set'
+                    fields:
+                      -
+                        handle: hero_title
+                        field:
+                          input_type: text
+                          antlers: false
+                          default: Techex
+                          display: 'Hero Title'
+                          type: text
+                          icon: text
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: title_1
+                        field:
+                          input_type: text
+                          antlers: false
+                          display: 'Title 1'
+                          type: text
+                          icon: text
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                          default: Technology
+                      -
+                        handle: title_2
+                        field:
+                          input_type: text
+                          antlers: false
+                          default: 'Grow your Business.'
+                          display: 'Title 2'
+                          type: text
+                          icon: text
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: title_3
+                        field:
+                          input_type: text
+                          antlers: false
+                          default: 'We Have 25 Years Of Experience In IT Solutions'
+                          display: 'Title 3'
+                          type: text
+                          icon: text
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: image
+                        field:
+                          mode: list
+                          container: assets
+                          restrict: false
+                          allow_uploads: true
+                          show_filename: true
+                          max_files: 1
+                          display: Image
+                          type: assets
+                          icon: assets
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: button_1_text
+                        field:
+                          input_type: text
+                          antlers: false
+                          default: 'Service we provide'
+                          display: 'Button 1 Text'
+                          type: text
+                          icon: text
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: button_1_link
+                        field:
+                          display: 'Button 1 Link'
+                          type: link
+                          icon: link
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: button_1_target
+                        field:
+                          options:
+                            _self: 'Self Tab'
+                            _blank: 'New Tab'
+                          multiple: false
+                          clearable: false
+                          searchable: true
+                          taggable: false
+                          push_tags: false
+                          cast_booleans: false
+                          default: _self
+                          display: 'Button 1 Target'
+                          type: select
+                          icon: select
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: button_2_text
+                        field:
+                          input_type: text
+                          antlers: false
+                          default: 'Learn More'
+                          display: 'Button 2 Text'
+                          type: text
+                          icon: text
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: button_2_link
+                        field:
+                          display: 'Button 2 Link'
+                          type: link
+                          icon: link
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: button_2_target
+                        field:
+                          options:
+                            _self: Self
+                            _blank: Blank
+                          multiple: false
+                          clearable: false
+                          searchable: true
+                          taggable: false
+                          push_tags: false
+                          cast_booleans: false
+                          default: _self
+                          display: 'Button 2 Target'
+                          type: select
+                          icon: select
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                display: 'Hero 2'
+                type: replicator
+                icon: replicator
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                if:
+                  home_hero_style: 'equals hero_2'
+            -
+              handle: hero_3
+              field:
+                collapse: false
+                previews: true
+                sets:
+                  new_set:
+                    display: 'New Set'
+                    fields:
+                      -
+                        handle: title_1
+                        field:
+                          input_type: text
+                          antlers: false
+                          default: 'We Have 25 Years Of Experience In IT Solutions'
+                          display: 'Title 1'
+                          type: text
+                          icon: text
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: title_2
+                        field:
+                          input_type: text
+                          antlers: false
+                          default: 'Grow Tech'
+                          display: 'Title 2'
+                          type: text
+                          icon: text
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: title_3
+                        field:
+                          input_type: text
+                          antlers: false
+                          default: Solutions
+                          display: 'Title 3'
+                          type: text
+                          icon: text
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: button_1_text
+                        field:
+                          input_type: text
+                          antlers: false
+                          default: 'SERVICE WE PROVIDE'
+                          display: 'Button 1 Text'
+                          type: text
+                          icon: text
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: button_1_link
+                        field:
+                          display: 'Button 1 Link'
+                          type: link
+                          icon: link
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: button_1_target
+                        field:
+                          options:
+                            _self: 'Self Tab'
+                            _blank: 'New Tab'
+                          multiple: false
+                          clearable: false
+                          searchable: true
+                          taggable: false
+                          push_tags: false
+                          cast_booleans: false
+                          default: _self
+                          display: 'Button 1 Target'
+                          type: select
+                          icon: select
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: button_2_text
+                        field:
+                          input_type: text
+                          antlers: false
+                          default: 'Learn More'
+                          display: 'Button 2 Text'
+                          type: text
+                          icon: text
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: button_2_link
+                        field:
+                          display: 'Button 2 Link'
+                          type: link
+                          icon: link
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: button_2_target
+                        field:
+                          options:
+                            _self: 'Self Tab'
+                            _blank: 'New Tab'
+                          multiple: false
+                          clearable: false
+                          searchable: true
+                          taggable: false
+                          push_tags: false
+                          cast_booleans: false
+                          display: 'Button 2 Target'
+                          type: select
+                          icon: select
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: youtube_link
+                        field:
+                          input_type: text
+                          antlers: false
+                          default: 'https://www.youtube.com/watch?v=LN6zOrJJGKQ&t=7s'
+                          display: 'Youtube Link'
+                          type: text
+                          icon: text
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: background_image
+                        field:
+                          mode: list
+                          container: assets
+                          restrict: false
+                          allow_uploads: true
+                          show_filename: true
+                          max_files: 1
+                          display: 'Background Image'
+                          type: assets
+                          icon: assets
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                display: 'Hero 3'
+                type: replicator
+                icon: replicator
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                if:
+                  home_hero_style: 'equals hero_3'
+                max_sets: 1
+            -
+              handle: hero_4
+              field:
+                collapse: false
+                previews: true
+                max_sets: 1
+                sets:
+                  new_set:
+                    display: 'New Set'
+                    fields:
+                      -
+                        handle: title_1
+                        field:
+                          input_type: text
+                          antlers: false
+                          default: 'ABOUT COMPANY'
+                          display: 'Title 1'
+                          type: text
+                          icon: text
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: title_2
+                        field:
+                          input_type: text
+                          antlers: false
+                          default: 'Best IT Solutions For Business'
+                          display: 'Title 2'
+                          type: text
+                          icon: text
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: title_3
+                        field:
+                          input_type: text
+                          antlers: false
+                          default: 'Sed ut perspiciatis unde omnis natus error sit voluptatem accusa ntium doloremque laudantium totam rem aperiamea'
+                          display: 'Title 3'
+                          type: text
+                          icon: text
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: button_1_text
+                        field:
+                          input_type: text
+                          antlers: false
+                          default: 'Our Service'
+                          display: 'Button 1 Text'
+                          type: text
+                          icon: text
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: button_1_link
+                        field:
+                          display: 'Button 1 Link'
+                          type: link
+                          icon: link
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: button_1_target
+                        field:
+                          options:
+                            _self: 'Self Tab'
+                            _blank: 'New Tab'
+                          multiple: false
+                          clearable: false
+                          searchable: true
+                          taggable: false
+                          push_tags: false
+                          cast_booleans: false
+                          default: _self
+                          display: 'Button 1 Target'
+                          type: select
+                          icon: select
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: button_2_text
+                        field:
+                          input_type: text
+                          antlers: false
+                          default: 'Learn More'
+                          display: 'Button 2 Text'
+                          type: text
+                          icon: text
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: button_2_link
+                        field:
+                          display: 'Button 2 Link'
+                          type: link
+                          icon: link
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: button_2_target
+                        field:
+                          options:
+                            _self: 'Self Tab'
+                            _blank: 'New Tab'
+                          multiple: false
+                          clearable: false
+                          searchable: true
+                          taggable: false
+                          push_tags: false
+                          cast_booleans: false
+                          default: _self
+                          display: 'Button 2 Target'
+                          type: select
+                          icon: select
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: image
+                        field:
+                          mode: list
+                          container: assets
+                          restrict: false
+                          allow_uploads: true
+                          show_filename: true
+                          max_files: 1
+                          display: Image
+                          type: assets
+                          icon: assets
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                display: 'Hero 4'
+                type: replicator
+                icon: replicator
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                if:
+                  home_hero_style: 'equals hero_4'
+            -
+              handle: hero_5
+              field:
+                collapse: false
+                previews: true
+                sets:
+                  new_set:
+                    display: 'New Set'
+                    fields:
+                      -
+                        handle: title_1
+                        field:
+                          input_type: text
+                          antlers: false
+                          default: 'we are creative it service agency'
+                          display: 'Title 1'
+                          type: text
+                          icon: text
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: title_2
+                        field:
+                          input_type: text
+                          antlers: false
+                          default: 'Preparing For Your Success Best IT Solutions'
+                          display: 'Title 2'
+                          type: text
+                          icon: text
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: title_3
+                        field:
+                          input_type: text
+                          antlers: false
+                          default: 'Sed ut perspiciatis unde omnis natus error sit voluptatem accusa ntium doloremque laudantium totam rem aperiamea'
+                          display: 'Title 3'
+                          type: text
+                          icon: text
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: button_1_text
+                        field:
+                          input_type: text
+                          antlers: false
+                          default: 'Service We Provide'
+                          display: 'Button 1 Text'
+                          type: text
+                          icon: text
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: button_1_link
+                        field:
+                          display: 'Button 1 Link'
+                          type: link
+                          icon: link
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: button_1_target
+                        field:
+                          options:
+                            _self: 'Self Tab'
+                            _blank: 'New Tab'
+                          multiple: false
+                          clearable: false
+                          searchable: true
+                          taggable: false
+                          push_tags: false
+                          cast_booleans: false
+                          default: _self
+                          display: 'Button 1 Target'
+                          type: select
+                          icon: select
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: button_2_text
+                        field:
+                          input_type: text
+                          antlers: false
+                          default: 'Learn More'
+                          display: 'Button 2 Text'
+                          type: text
+                          icon: text
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: button_2_link
+                        field:
+                          display: 'Button 2 Link'
+                          type: link
+                          icon: link
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: button_2_target
+                        field:
+                          options:
+                            _self: 'Self Tab'
+                            _blank: 'New Tab'
+                          multiple: false
+                          clearable: false
+                          searchable: true
+                          taggable: false
+                          push_tags: false
+                          cast_booleans: false
+                          default: _self
+                          display: 'Button 2 Target'
+                          type: select
+                          icon: select
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: background_image
+                        field:
+                          mode: list
+                          container: assets
+                          restrict: false
+                          allow_uploads: true
+                          show_filename: true
+                          display: 'Background Image'
+                          type: assets
+                          icon: assets
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                          max_files: 1
+                display: 'Hero 5'
+                type: replicator
+                icon: replicator
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                if:
+                  home_hero_style: 'equals hero_5'
+            -
+              handle: hero_6
+              field:
+                collapse: false
+                previews: true
+                max_sets: 1
+                sets:
+                  new_set:
+                    display: 'New Set'
+                    fields:
+                      -
+                        handle: title_1
+                        field:
+                          input_type: text
+                          antlers: false
+                          default: TECHEX
+                          display: 'Title 1'
+                          type: text
+                          icon: text
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: title_2
+                        field:
+                          input_type: text
+                          antlers: false
+                          default: 'Provide Best It'
+                          display: 'Title 2'
+                          type: text
+                          icon: text
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: title_3
+                        field:
+                          input_type: text
+                          antlers: false
+                          default: 'Services For Your'
+                          display: 'Title 3'
+                          type: text
+                          icon: text
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: title_4
+                        field:
+                          input_type: text
+                          antlers: false
+                          default: Business
+                          display: 'Title 4'
+                          type: text
+                          icon: text
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: button_text
+                        field:
+                          input_type: text
+                          antlers: false
+                          default: 'Discover More'
+                          display: 'Button Text'
+                          type: text
+                          icon: text
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: button_link
+                        field:
+                          display: 'Button Link'
+                          type: link
+                          icon: link
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: button_target
+                        field:
+                          options:
+                            _self: 'Self Tab'
+                            _blank: 'New Tab'
+                          multiple: false
+                          clearable: false
+                          searchable: true
+                          taggable: false
+                          push_tags: false
+                          cast_booleans: false
+                          default: _self
+                          display: 'Button Target'
+                          type: select
+                          icon: select
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: image
+                        field:
+                          mode: list
+                          container: assets
+                          restrict: false
+                          allow_uploads: true
+                          show_filename: true
+                          max_files: 1
+                          display: Image
+                          type: assets
+                          icon: assets
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: dot_image
+                        field:
+                          mode: list
+                          container: assets
+                          restrict: false
+                          allow_uploads: true
+                          show_filename: true
+                          max_files: 1
+                          display: 'Dot Image'
+                          type: assets
+                          icon: assets
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: object_image
+                        field:
+                          mode: list
+                          container: assets
+                          restrict: false
+                          allow_uploads: true
+                          show_filename: true
+                          max_files: 1
+                          display: 'Object Image'
+                          type: assets
+                          icon: assets
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                      -
+                        handle: banner_image
+                        field:
+                          mode: list
+                          container: assets
+                          restrict: false
+                          allow_uploads: true
+                          show_filename: true
+                          max_files: 1
+                          display: 'Banner Image'
+                          type: assets
+                          icon: assets
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                display: 'Hero 6'
+                type: replicator
+                icon: replicator
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                if:
+                  home_hero_style: 'equals hero_6'
+            -
+              handle: edit_template
+              field:
+                default: false
+                display: 'Edit Template'
+                type: toggle
+                icon: toggle
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: true
+            -
+              handle: hero_1_template
+              field:
+                antlers: true
+                display: 'Hero 1 Template'
+                type: textarea
+                icon: textarea
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                default: |-
+                  <section class="hero-slide-wrapper hero-1">
+                          <div class="hero-slider-active owl-carousel">
+                  	        
+                  	        
+                  	        {{hero_1}}
+                  	        
+                              <div class="single-slide bg-cover">
+                                  <div class="container">
+                                      <div class="row">
+                                          <div class="col-12 col-xl-8 col-lg-10">
+                                              <div class="hero-contents">
+                  	                            
+                  	                            <h2>{{title_1}}</h2>
+                  	                            
+                                                  
+                                                  <h1 class="fs-lg">{{title_2}}</h1>
+                                                  <p>{{title_3}}</p>
+                                                  <a href="{{button_1_link}}" title="{{button_1_text}}" target="{{button_1_target}}" class="theme-btn">{{button_1_text}} <i class="fas fa-arrow-right"></i></a>
+                                                  <a href="{{button_2_link}}" title="{{button_2_text}}" target="{{button_2_target}}" class="theme-btn minimal-btn">{{button_2_text}} <i class="fas fa-arrow-right"></i></a>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="slide-top-img d-none d-lg-block bg-overlay bg-cover" style="background-image: url('techex/assets/img/home1/hero1.jpg')"></div>
+                                  <div class="slide-bottom-img d-none d-xl-block bg-overlay bg-cover" style="background-image: url('techex/assets/img/home1/hero2.jpg')"></div>
+                              </div>
+                              {{/hero_1}}
+                                
+                          </div>
+                      </section>
+                always_save: true
+                if:
+                  home_hero_style: 'equals hero_1'
+                  edit_template: 'equals 1'
+            -
+              handle: hero_2_template
+              field:
+                antlers: true
+                display: 'Hero 2 Template'
+                type: textarea
+                icon: textarea
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: true
+                if:
+                  home_hero_style: 'equals hero_2'
+                  edit_template: 'equals 1'
+            -
+              handle: hero_3_template
+              field:
+                antlers: true
+                display: 'Hero 3 Template'
+                type: textarea
+                icon: textarea
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: true
+                if:
+                  home_hero_style: 'equals hero_3'
+                  edit_template: 'equals 1'
+            -
+              handle: hero_4_template
+              field:
+                antlers: true
+                display: 'Hero 4 Template'
+                type: textarea
+                icon: textarea
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                if:
+                  home_hero_style: 'equals hero_4'
+                  edit_template: 'equals 1'
+                always_save: true
+            -
+              handle: hero_5_template
+              field:
+                antlers: true
+                display: 'Hero 5 Template'
+                type: textarea
+                icon: textarea
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: true
+                if:
+                  home_hero_style: 'equals hero_5'
+                  edit_template: 'equals 1'
+            -
+              handle: hero_6_template
+              field:
+                antlers: true
+                display: 'Hero 6 Template'
+                type: textarea
+                icon: textarea
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                if:
+                  home_hero_style: 'equals hero_6'
+                  edit_template: 'equals 1'
+                always_save: true
+        features_1:
+          display: 'Features 1'
+          fields:
+            -
+              handle: image
+              field:
+                mode: list
+                container: assets
+                restrict: false
+                allow_uploads: true
+                show_filename: true
+                max_files: 1
+                display: Image
+                type: assets
+                icon: assets
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: title_1
+              field:
+                input_type: text
+                antlers: false
+                default: 'HOW CAN HELP YOU'
+                display: 'Title 1'
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: title_2
+              field:
+                input_type: text
+                antlers: false
+                default: 'We Help Your IT Business'
+                display: 'Title 2'
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: features
+              field:
+                fields:
+                  -
+                    handle: icon
+                    field:
+                      options:
+                        flaticon-speech-bubble: flaticon-speech-bubble
+                        flaticon-unlock: flaticon-unlock
+                        flaticon-mobile-app: flaticon-mobile-app
+                        flaticon-joystick: flaticon-joystick
+                      multiple: false
+                      clearable: false
+                      searchable: true
+                      taggable: false
+                      push_tags: false
+                      cast_booleans: false
+                      default: flaticon-speech-bubble
+                      display: iCon
+                      type: select
+                      icon: select
+                      listable: hidden
+                      instructions_position: above
+                      visibility: visible
+                  -
+                    handle: text_1
+                    field:
+                      input_type: text
+                      antlers: false
+                      default: 'IT Consultancy'
+                      display: 'Text 1'
+                      type: text
+                      icon: text
+                      listable: hidden
+                      instructions_position: above
+                      visibility: visible
+                  -
+                    handle: text_2
+                    field:
+                      input_type: text
+                      antlers: false
+                      default: 'Faster & Smarter Solutions'
+                      display: 'Text 2'
+                      type: text
+                      icon: text
+                      listable: hidden
+                      instructions_position: above
+                      visibility: visible
+                mode: table
+                reorderable: true
+                display: Features
+                type: grid
+                icon: grid
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: description
+              field:
+                antlers: false
+                display: Description
+                type: textarea
+                icon: textarea
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                default: 'Sed perspiciatis unde omnis iste natus error voluptatem accusantium doloremque laudantium totam rem aperiam eaque quae'
+            -
+              handle: description_background
+              field:
+                mode: list
+                container: assets
+                restrict: false
+                allow_uploads: true
+                show_filename: true
+                max_files: 1
+                display: 'Description Background'
+                type: assets
+                icon: assets
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: edit_template
+              field:
+                default: false
+                display: 'Edit Template'
+                type: toggle
+                icon: toggle
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: template
+              field:
+                antlers: true
+                display: Template
+                type: textarea
+                icon: textarea
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: true
+                default: |-
+                  <section class="features-wrapper features-1 section-padding pb-0">
+                          <div class="container">
+                              <div class="row">
+                                  <div class="col-12 col-lg-12">
+                                      <div class="section-title text-center">
+                                          <p>{{title_1}}</p>
+                                          <h1>{{title_2}}</h1>
+                                      </div>
+                                  </div>
+                              </div>
+
+                              <div class="row mt-3 mt-lg-5">
+                                  <div class="col-xl-4 d-none d-xl-block">
+                                      <div class="features-banner mt-30 bg-cover" style="background-image: url('{{image}}')">
+                                      </div>
+                                  </div>
+                                  <div class="col-xl-8 col-12">
+                                      <div class="row">
+                                          
+                                          
+                                          {{features}}
+                                          <div class="col-md-6 col-12">
+                                              <div class="single-features-item">
+                                                  <div class="icon">
+                                                      <i class="{{icon}}"></i>
+                                                  </div>
+                                                  <div class="content">
+                                                      <h3>{{text_1}}</h3>
+                                                      <p>{{text_2}}</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          {{/features}}
+                                          
+                                          
+                                          
+                                          
+                                          
+                                          <div class="col-12">
+                                              <div class="feature-cta bg-cover bg-center text-white" style="background-image: url('{{description_background}}')">
+                                                  <p>{{description}}</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </section>
+                if:
+                  edit_template: 'equals 1'
+        about_company:
+          display: 'About Company'
+          fields:
+            -
+              handle: title_1
+              field:
+                input_type: text
+                antlers: false
+                display: 'Title 1'
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                default: 'ABOUT COMPANY'
+            -
+              handle: title_2
+              field:
+                input_type: text
+                antlers: false
+                display: 'Title 2'
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                default: 'Get’s IT Solutions For'
+            -
+              handle: title_3
+              field:
+                input_type: text
+                antlers: false
+                display: 'Title 3'
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                default: 'Expert Consultants'
+            -
+              handle: description
+              field:
+                antlers: false
+                display: Description
+                type: textarea
+                icon: textarea
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                default: 'Sed ut perspiciatis unde omnis natus error sit voluptatem accusa ntium doloremque laudantium totam rem aperiamea queipsa quae abillo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
+            -
+              handle: box_title
+              field:
+                input_type: text
+                antlers: false
+                display: 'Box Title'
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                default: 'Professinoal Consultants'
+            -
+              handle: box_description
+              field:
+                antlers: false
+                display: 'Box Description'
+                type: textarea
+                icon: textarea
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                default: 'Quis autem vel eum iure reprehenderit quin voluptate velit esse quam'
+            -
+              handle: image
+              field:
+                mode: list
+                container: assets
+                restrict: false
+                allow_uploads: true
+                show_filename: true
+                max_files: 1
+                display: Image
+                type: assets
+                icon: assets
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: other_services
+              field:
+                fields:
+                  -
+                    handle: icon
+                    field:
+                      options:
+                        flaticon-speech-bubble: flaticon-speech-bubble
+                        flaticon-unlock: flaticon-unlock
+                        flaticon-mobile-app: flaticon-mobile-app
+                      multiple: false
+                      clearable: false
+                      searchable: true
+                      taggable: false
+                      push_tags: false
+                      cast_booleans: false
+                      default: flaticon-mobile-app
+                      display: Icon
+                      type: select
+                      icon: select
+                      listable: hidden
+                      instructions_position: above
+                      visibility: visible
+                  -
+                    handle: title_1
+                    field:
+                      input_type: text
+                      antlers: false
+                      default: 'IT Consultancy'
+                      display: 'Title 1'
+                      type: text
+                      icon: text
+                      listable: hidden
+                      instructions_position: above
+                      visibility: visible
+                  -
+                    handle: title_2
+                    field:
+                      input_type: text
+                      antlers: false
+                      default: 'Faster & Smarter Solutions'
+                      display: 'Title 2'
+                      type: text
+                      icon: text
+                      listable: hidden
+                      instructions_position: above
+                      visibility: visible
+                mode: table
+                min_rows: 3
+                reorderable: true
+                display: 'Other Services'
+                type: grid
+                icon: grid
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: edit_template
+              field:
+                default: false
+                display: 'Edit template'
+                type: toggle
+                icon: toggle
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: template
+              field:
+                antlers: true
+                display: Template
+                type: textarea
+                icon: textarea
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                if:
+                  edit_template: 'equals 1'
+                always_save: true
+                default: |-
+                  <section class="about-us-wrapper section-padding">
+                          <div class="container">
+                             <div class="row">
+                                  <div class="col-lg-6 col-12 pr-lg-5 order-2 order-lg-1 mt-5 mt-lg-0">
+                                      <div class="section-title mb-30">
+                                          <p>{{title_1}}</p>
+                                          <h1>{{title_2}} <br>
+                                              {{title_3}}</h1>
+                                      </div>
+
+                                      <p class="pr-5">{{description}}</p>
+                                      
+                                      <div class="about-icon-box">
+                                          <div class="icon">
+                                              <i class="fal fa-users"></i>
+                                          </div>
+                                          <div class="content">
+                                              <h3>{{box_title}}</h3>
+                                              <p>{{box_description}}</p>
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                  <div class="col-lg-6 pl-lg-5 col-12 order-1 order-lg-2">
+                                      <span class="dot-circle"></span>
+                                      <div class="about-us-img" style="background-image: url('{{image}}')">
+                                      </div>
+                                      <span class="triangle-bottom-right"></span>
+                                  </div>
+                              </div>
+                              
+                              {{if other_services}}
+
+                              <div class="row mpt-50 pt-100">
+                  	            {{other_services}}
+                                  <div class="col-lg-4 col-md-6 col-12">
+                                      <div class="single-features-item">
+                                          <div class="icon">
+                                              <i class="{{icon}}"></i>
+                                          </div>
+                                          <div class="content">
+                                              <h3>{{title_1}}</h3>
+                                              <p>{{title_2}}</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                                 {{/other_services}}
+                              </div>
+                              
+                              {{/if}}
+                              
+                          </div>
+                      </section>
+        popular_it_services:
+          display: 'Popular It Services'
+          fields:
+            -
+              handle: title_1
+              field:
+                input_type: text
+                antlers: false
+                default: 'POPULAR IT SERVICES'
+                display: 'Title 1'
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: title_2
+              field:
+                input_type: text
+                antlers: false
+                default: 'Our Professional Solutions'
+                display: 'Title 2'
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: title_3
+              field:
+                input_type: text
+                antlers: false
+                default: 'For IT Business'
+                display: 'Title 3'
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: services
+              field:
+                fields:
+                  -
+                    handle: icon
+                    field:
+                      mode: list
+                      container: assets
+                      restrict: false
+                      allow_uploads: true
+                      show_filename: true
+                      display: iCon
+                      type: assets
+                      icon: assets
+                      listable: hidden
+                      instructions_position: above
+                      visibility: visible
+                      max_files: 1
+                  -
+                    handle: title_1
+                    field:
+                      input_type: text
+                      antlers: false
+                      default: 'Manage IT Services'
+                      display: 'Title 1'
+                      type: text
+                      icon: text
+                      listable: hidden
+                      instructions_position: above
+                      visibility: visible
+                  -
+                    handle: description
+                    field:
+                      input_type: text
+                      antlers: false
+                      default: 'Sed perspicias unde omnis natus error volute'
+                      display: Description
+                      type: text
+                      icon: text
+                      listable: hidden
+                      instructions_position: above
+                      visibility: visible
+                  -
+                    handle: link
+                    field:
+                      display: Link
+                      type: link
+                      icon: link
+                      listable: hidden
+                      instructions_position: above
+                      visibility: visible
+                  -
+                    handle: link_text
+                    field:
+                      input_type: text
+                      antlers: false
+                      default: 'Learn More'
+                      display: 'Link Text'
+                      type: text
+                      icon: text
+                      listable: hidden
+                      instructions_position: above
+                      visibility: visible
+                mode: table
+                min_rows: 4
+                reorderable: true
+                display: Services
+                type: grid
+                icon: grid
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: edit_template
+              field:
+                default: false
+                display: 'Edit Template'
+                type: toggle
+                icon: toggle
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: template
+              field:
+                antlers: true
+                display: Template
+                type: textarea
+                icon: textarea
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                if:
+                  edit_template: 'equals 1'
+                always_save: true
+                default: |-
+                  <section class="services-wrapper service-1 section-padding section-bg">
+                          <div class="container">
+                              <div class="row mb-4 mb-lg-5">
+                                  <div class="col-12 col-lg-12">
+                                      <div class="section-title text-white text-center">
+                                          <p>{{title_1}}</p>
+                                          <h1>{{title_2}}<br>{{title_3}}</h1>
+                                      </div>
+                                  </div>
+                              </div>
+
+                              <div class="row">
+                  	            {{services}}
+                                  <div class="col-md-6 col-xl-3 col-12">
+                                      <div class="single-service-item">
+                                          <div class="icon">
+                                              <img src="{{icon}}" alt="service">
+                                          </div>
+                                          <h4>{{title_1}}</h4>
+                                          <p>{{descriptoin}}</p>
+                                          <a href="{{link}}">{{link_text}} <i class="fas fa-arrow-right"></i></a>
+                                      </div>
+                                  </div>
+                                  {{/services}}
+                              </div>
+                          </div>
+                      </section>
+        our_numbers:
+          display: 'Our Numbers'
+          fields:
+            -
+              handle: background
+              field:
+                mode: list
+                container: assets
+                restrict: false
+                allow_uploads: true
+                show_filename: true
+                max_files: 1
+                display: Background
+                type: assets
+                icon: assets
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: our_numbers
+              field:
+                fields:
+                  -
+                    handle: icon
+                    field:
+                      options:
+                        fa-gem: Gem
+                        fa-drafting-compass: 'Drafting Compass'
+                        fa-stars: Stars
+                        fa-trophy-alt: Trophy
+                      multiple: false
+                      clearable: false
+                      searchable: true
+                      taggable: false
+                      push_tags: false
+                      cast_booleans: false
+                      default: fa-gem
+                      display: Icon
+                      type: select
+                      icon: select
+                      listable: hidden
+                      instructions_position: above
+                      visibility: visible
+                  -
+                    handle: title
+                    field:
+                      input_type: text
+                      antlers: false
+                      default: 'Project Completed'
+                      display: Title
+                      type: text
+                      icon: text
+                      listable: hidden
+                      instructions_position: above
+                      visibility: visible
+                  -
+                    handle: number
+                    field:
+                      input_type: text
+                      antlers: false
+                      default: '368'
+                      display: Number
+                      type: text
+                      icon: text
+                      listable: hidden
+                      instructions_position: above
+                      visibility: visible
+                mode: table
+                min_rows: 4
+                reorderable: true
+                display: 'Our Numbers'
+                type: grid
+                icon: grid
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: edit_template
+              field:
+                default: false
+                display: 'Edit Template'
+                type: toggle
+                icon: toggle
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: template
+              field:
+                antlers: true
+                display: Template
+                type: textarea
+                icon: textarea
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                if:
+                  edit_template: 'equals 1'
+                always_save: true
+                default: |-
+                  <section class="funfact-wrapper text-white">
+                          <div class="container">
+                              <div class="funfact-content-grid bg-cover" style="background-image: url('{{backround}}')">
+                  	            {{our_numbers}}
+                                  <div class="single-funfact-item">
+                                      <div class="icon">
+                                          <i class="fal {{icon}}"></i>
+                                      </div>
+                                      <h3>{{number}}</h3>
+                                      <p>{{title}}</p>
+                                  </div>
+                                  {{/our_numbers}}
+                                  
+                              </div>
+                          </div>
+                      </section>
+        get_ready_callouts:
+          display: 'Get Ready Callouts'
+          fields:
+            -
+              handle: background
+              field:
+                mode: list
+                container: assets
+                restrict: false
+                allow_uploads: true
+                show_filename: true
+                max_files: 1
+                display: Background
+                type: assets
+                icon: assets
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: title
+              field:
+                input_type: text
+                antlers: false
+                default: 'Ready To Get Free Consulations For <br> Any Kind Of It Solutions ?'
+                display: Title
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: button_1_text
+              field:
+                input_type: text
+                antlers: false
+                default: 'Get a Quote'
+                display: 'Button 1 Text'
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: button_1_link
+              field:
+                display: 'Button 1 Link'
+                type: link
+                icon: link
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: button_1_target
+              field:
+                options:
+                  _self: Self
+                  _blank: New
+                multiple: false
+                clearable: false
+                searchable: true
+                taggable: false
+                push_tags: false
+                cast_booleans: false
+                default: _self
+                display: 'Button 1 Target'
+                type: select
+                icon: select
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: button_2_text
+              field:
+                input_type: text
+                antlers: false
+                default: 'Learn More'
+                display: 'Button 2 Text'
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: button_2_link
+              field:
+                display: 'Button 2 Link'
+                type: link
+                icon: link
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: button_2_target
+              field:
+                options:
+                  _self: Self
+                  _blank: New
+                multiple: false
+                clearable: false
+                searchable: true
+                taggable: false
+                push_tags: false
+                cast_booleans: false
+                default: _self
+                display: 'Button 2 Target'
+                type: select
+                icon: select
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: edit_template
+              field:
+                default: false
+                display: 'Edit Template'
+                type: toggle
+                icon: toggle
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: template
+              field:
+                antlers: true
+                display: Template
+                type: textarea
+                icon: textarea
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                if:
+                  edit_template: 'equals 1'
+                always_save: true
+                default: |-
+                  <section class="cta-banner">
+                          <div class="container-fluid bg-cover section-bg" style="background-image: url('{{background}}')">
+                              <div class="cta-content">
+                                  <div class="row align-items-center">
+                                      <div class="col-xl-7 text-white col-12 text-center text-xl-left">
+                                          <h1>{{title}}</h1>
+                                      </div>
+                                      <div class="col-xl-5 col-12 text-center text-xl-right">
+                                          <a href="{{button_1_link}}" target="{{button_1_target}}" class="theme-btn mt-4 mt-xl-0">{{button_1_text}} <i class="fas fa-arrow-right"></i></a>
+                                          <a href="{{button_2_link}}" target="{{button_2_target}}" class="ml-sm-3 mt-4 mt-xl-0 theme-btn minimal-btn">{{button_2_text}}<i class="fas fa-arrow-right"></i></a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </section>
+        companies_work_with:
+          display: 'Companies Work With'
+          fields:
+            -
+              handle: template
+              field:
+                antlers: true
+                display: Template
+                type: textarea
+                icon: textarea
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                default: |-
+                  <div class="client-brand-logo-wrap">
+                          <div class="container">
+                              <div class="brand-carousel-active pt-60 pb-60 d-flex justify-content-between owl-carousel">
+
+                  	            {{companies_work_with:company_logos}}
+
+                                  <div class="single-client">
+                                      <img src="{{url}}" alt="{{alt}}">
+                                  </div>
+                                  {{/companies_work_with:company_logos}}
+                              </div>
+                          </div>
+                      </div>
+        why_choose_us:
+          display: 'Why Choose Us'
+          fields:
+            -
+              handle: image
+              field:
+                mode: list
+                container: assets
+                restrict: false
+                allow_uploads: true
+                show_filename: true
+                max_files: 1
+                display: Image
+                type: assets
+                icon: assets
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: title_1
+              field:
+                input_type: text
+                antlers: false
+                default: 'Why Choose Us'
+                display: 'Title 1'
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: title_2
+              field:
+                input_type: text
+                antlers: false
+                default: 'Innovating Solutions <br> Digital Mindset'
+                display: 'Title 2'
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: accordian
+              field:
+                fields:
+                  -
+                    handle: title
+                    field:
+                      input_type: text
+                      antlers: false
+                      default: 'Can I Get Internet In My Area?'
+                      display: Title
+                      type: text
+                      icon: text
+                      listable: hidden
+                      instructions_position: above
+                      visibility: visible
+                  -
+                    handle: description
+                    field:
+                      antlers: false
+                      default: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus dolor at libero ultricies ullamcorper vel ut dui. Maecenas sollicitudin'
+                      display: Description
+                      type: textarea
+                      icon: textarea
+                      listable: hidden
+                      instructions_position: above
+                      visibility: visible
+                mode: stacked
+                reorderable: true
+                display: Accordian
+                type: grid
+                icon: grid
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: edit_template
+              field:
+                default: false
+                display: 'Edit Template'
+                type: toggle
+                icon: toggle
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: template
+              field:
+                antlers: true
+                display: Template
+                type: textarea
+                icon: textarea
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                if:
+                  edit_template: 'equals 1'
+                always_save: true
+                default: |-
+                  <section class="faq-section section-padding">
+                          <div class="faq-bg bg-cover d-none d-lg-block" style="background-image: url('{{image}}')"></div>
+                          <div class="container">
+                              <div class="row">
+                                  <div class="col-xl-5 col-lg-6 offset-lg-6 offset-xl-7">
+                                      <div class="col-12 col-lg-12 mb-40">
+                                          <div class="section-title">
+                                              <p>{{title_1}}</p>
+                                              <h1>{{title_2}}</h1>
+                                          </div>
+                                      </div>
+
+                                      <div class="faq-content">
+                                          <div class="faq-accordion">
+                                              <div id="accordion" class="accordion">
+                                                  
+                                                 
+                                                  {{accordian}}
+                                                  
+                                                  <div class="card">
+                                                      <div class="card-header">
+                                                          <p class="mb-0 text-capitalize">
+                                                              <a class="collapsed" role="button" data-toggle="collapse" aria-expanded="false" href="#faq-{{id}}">
+                                                                  {{title}}
+                                                              </a>
+                                                          </p>
+                                                      </div>
+                                                      <div id="faq-{{id}}" class="collapse" data-parent="#accordion" style="">
+                                                          <div class="card-body">
+                                                             {{description}} 
+                                                          </div>
+                                                      </div>
+                                                  </div> <!-- /card -->
+                                                  {{/accordian}}
+                                                  
+                                                  
+                                                  
+                                              </div>                        
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </section>
+        how_can_help_you:
+          display: 'How Can Help You'
+          fields:
+            -
+              handle: title_1
+              field:
+                input_type: text
+                antlers: false
+                default: 'HOW CAN HELP YOU'
+                display: 'Title 1'
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: title_2
+              field:
+                input_type: text
+                antlers: false
+                default: 'We Provide Best IT Solutions For Business 25 Years We Provide Solutions'
+                display: 'Title 2'
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: description
+              field:
+                antlers: false
+                default: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque quae abillo inventore'
+                display: Description
+                type: textarea
+                icon: textarea
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: services
+              field:
+                fields:
+                  -
+                    handle: icon
+                    field:
+                      options:
+                        flaticon-monitor: Monitor
+                        flaticon-user: User
+                        flaticon-tool: Tool
+                        flaticon-video: Video
+                      multiple: false
+                      clearable: false
+                      searchable: true
+                      taggable: false
+                      push_tags: false
+                      cast_booleans: false
+                      default: flaticon-monitor
+                      display: Icon
+                      type: select
+                      icon: select
+                      listable: hidden
+                      instructions_position: above
+                      visibility: visible
+                  -
+                    handle: title
+                    field:
+                      input_type: text
+                      antlers: false
+                      default: 'Quality Service'
+                      display: Title
+                      type: text
+                      icon: text
+                      listable: hidden
+                      instructions_position: above
+                      visibility: visible
+                  -
+                    handle: description
+                    field:
+                      antlers: false
+                      default: 'Sed ut perspe unde omnis natus sit voluptatem accusa doloremue laudantium'
+                      display: Description
+                      type: textarea
+                      icon: textarea
+                      listable: hidden
+                      instructions_position: above
+                      visibility: visible
+                mode: stacked
+                min_rows: 4
+                reorderable: true
+                display: Services
+                type: grid
+                icon: grid
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: edit_template
+              field:
+                default: false
+                display: 'Edit Template'
+                type: toggle
+                icon: toggle
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: template
+              field:
+                antlers: true
+                display: Template
+                type: textarea
+                icon: textarea
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: true
+                if:
+                  edit_template: 'equals 1'
+                default: |-
+                  <section class="servces-wrapper section-padding">
+                          <div class="container">
+                              <div class="row text-center mb-30">
+                                  <div class="col-lg-8 p-lg-0 col-12 offset-lg-2">
+                                      <div class="section-title">
+                                          <p>{{title_1}}</p>
+                                          <h1>{{title_2}}</h1>
+                                      </div>
+                                      <p class="mt-20">{{description}}</p>
+                                  </div>
+                              </div>
+
+                              <div class="row justify-content-between">
+                                 
+                                 
+                                 {{services}}
+                                  <div class="col-lg-3 col-md-6 col-12">
+                                      <div class="single-service">
+                                          <div class="icon">
+                                              <i class="flaticon {{icon}}"></i>
+                                          </div>
+                                          <div class="content">
+                                              <h3>{{title}}</h3>
+                                              <p>{{description}}</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                                 {{/services}}
+                              </div>
+                          </div>
+                      </section>
+        latest_news:
+          display: 'Latest News'
+          fields:
+            -
+              handle: title_1
+              field:
+                input_type: text
+                antlers: false
+                default: 'LATEST NEWS & BLOG'
+                display: 'Title 1'
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: title_2
+              field:
+                input_type: text
+                antlers: false
+                default: 'Get Every Single Updates'
+                display: 'Title 2'
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: edit_template
+              field:
+                default: false
+                display: 'Edit Template'
+                type: toggle
+                icon: toggle
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: template
+              field:
+                antlers: true
+                display: Template
+                type: textarea
+                icon: textarea
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: true
+                if:
+                  edit_template: 'equals 1'
+                default: |-
+                  <section class="blog-section section-padding bg-contain" style="background-image: url('/assets/img/blog_bg.png')">
+                          <div class="container">
+                              <div class="row mb-30">
+                                  <div class="col-12 col-lg-12">
+                                      <div class="section-title text-center">
+                                          <p>{{title_1}}</p>
+                                          <h1>{{title_2}}</h1>
+                                      </div>
+                                  </div>
+                              </div>
+
+                              <div class="row">
+                  	            {{collection:news limit="3"}}
+                                  <div class="col-xl-4 col-md-6 col-12">
+                                      <div class="single-blog-card">
+                                          <div class="blog-featured-thumb bg-cover" style="background-image: url('{{image}}')"></div>
+                                          <div class="content">
+                                              <div class="post-author">
+                                                  <a href="{{url}}"><i class="fal fa-user-circle"></i>{{author}}</a>
+                                              </div>
+                                              <h3><a href="{{url}}">{{title}}</a></h3>
+                                              <div class="btn-link-share">
+                                                  <a href="{{url}}" class="theme-btn minimal-btn">read more <i class="fas fa-arrow-right"></i></a>
+                                                  <!--<a href="#"><i class="fal fa-share-alt"></i></a>-->
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  {{/collection:news}}
+                                 
+                              </div>
+                          </div>
+                      </section>
+        testimonial:
+          display: Testimonial
+          fields:
+            -
+              handle: image
+              field:
+                mode: list
+                container: assets
+                restrict: false
+                allow_uploads: true
+                show_filename: true
+                max_files: 1
+                display: Image
+                type: assets
+                icon: assets
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: testimonials
+              field:
+                fields:
+                  -
+                    handle: name
+                    field:
+                      input_type: text
+                      antlers: false
+                      default: Manup
+                      display: Name
+                      type: text
+                      icon: text
+                      listable: hidden
+                      instructions_position: above
+                      visibility: visible
+                  -
+                    handle: designation
+                    field:
+                      input_type: text
+                      antlers: false
+                      default: 'Programme Manager'
+                      display: Designation
+                      type: text
+                      icon: text
+                      listable: hidden
+                      instructions_position: above
+                      visibility: visible
+                  -
+                    handle: testimonial
+                    field:
+                      antlers: false
+                      default: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus dolor at libero ultricies ullamcorper vel ut dui. Maecenas sollicitudin'
+                      display: Testimonial
+                      type: textarea
+                      icon: textarea
+                      listable: hidden
+                      instructions_position: above
+                      visibility: visible
+                  -
+                    handle: author_image
+                    field:
+                      mode: list
+                      container: assets
+                      restrict: false
+                      allow_uploads: true
+                      show_filename: true
+                      max_files: 1
+                      display: 'Author Image'
+                      type: assets
+                      icon: assets
+                      listable: hidden
+                      instructions_position: above
+                      visibility: visible
+                mode: stacked
+                reorderable: true
+                display: Testimonials
+                type: grid
+                icon: grid
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: edit_temlate
+              field:
+                default: false
+                display: 'Edit Temlate'
+                type: toggle
+                icon: toggle
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: template
+              field:
+                antlers: true
+                display: Template
+                type: textarea
+                icon: textarea
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                if:
+                  edit_temlate: 'equals 1'
+                always_save: true
+                default: |-
+                  <section class="testimonial-wrapper section-padding">
+                          <div class="testimonial-bg bg-cover" style="background-image: url('{{image}}')"></div>
+                          <div class="container">
+                              <div class="row">
+                                  <div class="col-12 col-lg-8 offset-lg-4 col-xl-5 offset-xl-7">
+                                      <div class="testimonial-carousel-active owl-carousel owl-theme">
+                  	                    {{testimonials}}
+                                          <div class="single-testimonial">
+                                              <div class="icon">
+                                                  <i class="flaticon-right-quote"></i>
+                                              </div>
+                                              <h2>{{testimonial}}</h2>
+                                              <div class="client-info">
+                                                  <div class="client-img bg-cover" style="background-image: url('{{author_image}}')"></div>
+                                                  <div class="client-bio">
+                                                      <h3>{{author}}</h3>
+                                                      <p>{{designation}}</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+
+                                          {{/testimonials}}
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </section>
+        exclusive_members:
+          display: 'Exclusive Members'
+          fields:
+            -
+              handle: title_1
+              field:
+                input_type: text
+                antlers: false
+                default: 'EXCLUSIVE MEMBERS'
+                display: 'Title 1'
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: title_2
+              field:
+                input_type: text
+                antlers: false
+                default: 'Meet Our Experience Team Members'
+                display: 'Title 2'
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: team_page_link
+              field:
+                collections:
+                  - pages
+                display: 'Team Page Link'
+                type: link
+                icon: link
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: edit_template
+              field:
+                default: false
+                display: 'Edit Template'
+                type: toggle
+                icon: toggle
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: template
+              field:
+                antlers: true
+                display: Template
+                type: textarea
+                icon: textarea
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                if:
+                  edit_template: 'equals 1'
+                always_save: true
+                default: |-
+                  <section class="our-team-wrapper section-padding">
+                          <div class="container">
+                              <div class="row align-items-center mb-40">
+                                  <div class="col-12 col-md-6">
+                                      <div class="section-title">
+                                          <p>{{title_1}}</p>
+                                          <h1>{{title_2}}</h1>
+                                      </div>
+                                  </div>
+                                  <div class="col-12 col-md-6 mt-4 mt-md-0 text-md-right">
+                                      <a href="{{team_page_link}}" class="theme-btn off-white">View all Member <i class="fas fa-arrow-right"></i></a>
+                                  </div>
+                              </div>
+
+                              <div class="team-members-list row">
+                                  {{collection:our_team limit="4"}}
+                                  <div class="col-12 col-md-6 col-xl-3">
+                                      <div class="single-team-member">
+                                          <div class="member-img bg-cover bg-center" style="background-image: url('{{image}}')">
+                                          </div>
+                                          <div class="member-bio">
+                                              <h4>{{title}}</h4>
+                                              <p>{{designation}}</p>
+                                          </div>
+                                          <div class="social-profile">
+                                              {{social_media}}
+                                                      <a href="link" target="_blank"><i class="fab {{icon}}"></i></a>
+                                                      {{/social_media}}
+                                          </div>
+                                      </div>
+                                  </div>
+                                  {{/collection:our_team}}
+                              </div>
+                          </div>
+                      </section>
+        case_studies:
+          display: 'Case Studies'
+          fields:
+            -
+              handle: title_1
+              field:
+                input_type: text
+                antlers: false
+                default: 'OUR RECENT PROJECT'
+                display: 'Title 1'
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: title_2
+              field:
+                input_type: text
+                antlers: false
+                default: 'Latest Case Studies'
+                display: 'Title 2'
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: filters
+              field:
+                antlers: false
+                default: |-
+                  <button data-filter="*" class="active">All</button>
+                                          <button data-filter=".business">Business</button>
+                                          <button data-filter=".consulting">Consulting</button>
+                                          <button data-filter=".product">Product</button>
+                                          <button data-filter=".engineering">Engineering</button>
+                display: Filters
+                type: textarea
+                icon: textarea
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: show_all
+              field:
+                default: false
+                display: 'Show All'
+                type: toggle
+                icon: toggle
+                instructions: 'Otherwise it will show latest 4'
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: edit_template
+              field:
+                default: false
+                display: 'Edit template'
+                type: toggle
+                icon: toggle
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: template
+              field:
+                antlers: true
+                display: Template
+                type: textarea
+                icon: textarea
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: true
+                default: |-
+                  <section class="case-study-wrapper section-padding">
+                          <div class="container">
+                              <div class="row mb-50 align-items-center">
+                                  <div class="col-12 col-md-5">
+                                      <div class="section-title">
+                                          <p>{{title_1}}</p>
+                                          <h1>{{title_2}}</h1>
+                                      </div>
+                                  </div>
+                                  <div class="col-12 col-md-7 mt-4 mt-md-0 text-md-right">
+                                      <div class="case-cat-filter">
+                                          {{filters}}                    </div>
+                                  </div>
+                              </div>
+                              
+                              <div class="row grid" style="position: relative; height: 944px;">
+                                  
+                                  
+                                  
+                                  {{collection:case_study limit=show_all?100:6}}
+                                 
+                                  <div class="col-xl-4 col-md-6 grid-item {{ foreach:category }} {{value:key}} {{ /foreach:category }} " style="position: absolute; left: 0%; top: 0px;">
+                                      <div class="single-case-study">
+                                          <div class="features-thumb bg-cover" style="background-image: url('{{main_image}}')"></div>
+                                          <div class="content">
+                                              <h3>{{title}}</h3>
+                                              <p>{{client}}</p>
+                                              <a href="{{url}}">Read more <i class="fas fa-arrow-right"></i></a>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  {{/collection:case_study}}
+                                  
+                              </div>
+                          </div>
+                      </section>
+                if:
+                  edit_template: 'equals 1'
+        contact_us:
+          display: 'Contact Us'
+          fields:
+            -
+              handle: boxes
+              field:
+                fields:
+                  -
+                    handle: icon
+                    field:
+                      options:
+                        fa-envelope: Envelop
+                        fa-phone: Phone
+                        fa-map-marker-alt: 'Map Marker'
+                      multiple: false
+                      clearable: false
+                      searchable: true
+                      taggable: false
+                      push_tags: false
+                      cast_booleans: false
+                      display: ICon
+                      type: select
+                      icon: select
+                      listable: hidden
+                      instructions_position: above
+                      visibility: visible
+                  -
+                    handle: title_1
+                    field:
+                      input_type: text
+                      antlers: false
+                      default: 'Email Address'
+                      display: 'Title 1'
+                      type: text
+                      icon: text
+                      listable: hidden
+                      instructions_position: above
+                      visibility: visible
+                  -
+                    handle: title_2
+                    field:
+                      input_type: text
+                      antlers: false
+                      default: 'Sent mail asap anytime'
+                      display: 'Title 2'
+                      type: text
+                      icon: text
+                      listable: hidden
+                      instructions_position: above
+                      visibility: visible
+                  -
+                    handle: data
+                    field:
+                      antlers: false
+                      default: |-
+                        <p>info@example.com</p>
+                                                        <p>jobs@example.com</p>
+                      display: Data
+                      type: textarea
+                      icon: textarea
+                      listable: hidden
+                      instructions_position: above
+                      visibility: visible
+                mode: stacked
+                reorderable: true
+                display: Boxes
+                type: grid
+                icon: grid
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: gmap_iframe
+              field:
+                antlers: false
+                default: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5457.875323165521!2d144.90402300269133!3d-37.792722838344716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad646b5d2ba4df7%3A0x4045675218ccd90!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sbd!4v1612018663424!5m2!1sen!2sbd" frameborder="0" style="border:0; width:100%" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>'
+                display: 'Gmap Iframe'
+                type: textarea
+                icon: textarea
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: form_title_1
+              field:
+                input_type: text
+                antlers: false
+                default: 'SEND US MESSAGE'
+                display: 'Form Title 1'
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: form_title_2
+              field:
+                input_type: text
+                antlers: false
+                default: "Don't Hesited To Contact Us <br> Say Hello or Message"
+                display: 'Form Title 2'
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: edit_template
+              field:
+                default: false
+                display: 'Edit Template'
+                type: toggle
+                icon: toggle
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: template
+              field:
+                antlers: true
+                display: Template
+                type: textarea
+                icon: textarea
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                if:
+                  edit_template: 'equals 1'
+                always_save: true
+                default: |-
+                  <section class="contact-page-wrap section-padding">
+                          <div class="container">
+                              <div class="row">
+                                  {{boxes}}
+                                  <div class="col-lg-4 col-md-6 col-12">
+                                      <div class="single-contact-card card1">
+                                          <div class="top-part">
+                                              <div class="icon">
+                                                  <i class="fal {{icon}}"></i>
+                                              </div>
+                                              <div class="title">
+                                                  <h4>{{title_1}}</h4>
+                                                  <span>{{title_2}}</span>
+                                              </div>
+                                          </div>
+                                          <div class="bottom-part">                            
+                                              <div class="info">
+                                                  {{data}}
+                                              </div>
+                                              <div class="icon">
+                                                  <i class="fal fa-arrow-right"></i>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  {{/boxes}}
+                              </div>
+
+                              <div class="row">
+                                  <div class="col-12 col-lg-12">
+                                      <div class="contact-map-wrap">
+                                          <div id="map">
+                                              {{gmap_iframe}}
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+
+                              <div class="row section-padding pb-0">
+                                  <div class="col-12 text-center mb-20">
+                                      <div class="section-title">
+                                          <p>{{form_title_1}}</p>
+                                          <h1>{{form_title_2}}</h1>
+                                      </div>
+                                  </div>
+
+                                  <div class="col-12 col-lg-12">
+                                      <div class="contact-form">    
+                  	                    
+                  	                    
+                  	                  {{ form:contact_us }}
+                   
+                      
+                      {{ if success }}
+                          <div class="bg-green-300 text-white p-2">
+                              {{ success }}
+                          </div>
+                      {{ else }}
+                         
+                          {{ if errors }}
+                              <div class="bg-red-300 text-white p-2">
+                                  {{ errors }}
+                                      {{ value }}<br>
+                                  {{ /errors }}
+                              </div>
+                          {{ /if }}
+                   
+                        
+                          {{ fields }}
+                              <div class="p-2">
+                                  <label>{{ display }}</label>
+                                  <div class="p-1">{{ field }}</div>
+                                  {{ if error }}
+                                      <p class="text-gray-500">{{ error }}</p>
+                                  {{ /if }}
+                              </div>
+                          {{ /fields }}
+                   
+                         
+                          <input type="hidden" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
+                   
+                          
+                          <button type="submit" class="theme-btn">Submit</button>
+                      {{ /if }}
+                   
+                  {{ /form:contact_us }}
+                  	                    
+                  	                    
+                  	                                                                        
+                                         
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </section>
+      display: 'Block Types'
+      type: replicator
+      icon: replicator
+      listable: hidden
+      instructions_position: above
+      visibility: visible

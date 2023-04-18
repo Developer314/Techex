@@ -1,0 +1,59 @@
+{{ partial:partials/header }}
+
+
+<section class="blog-wrapper news-wrapper section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-12">
+                    <div class="blog-post-details border-wrap">
+                        <div class="single-blog-post post-details">                            
+                            <div class="post-content">
+	                            <h2>{{title}}</h2>
+                               {{content}}
+                                                                               
+                            </div>
+                        </div>
+                        <div class="row tag-share-wrap">
+                            
+                            
+                            <hr>
+                        </div>
+
+                        <div class="related-post-wrap">
+                            <h3>Related Post</h3>
+
+                            <div class="row">
+	                            {{related_news}}
+                                <div class="col-md-6 col-12">
+                                    <div class="single-related-post">
+                                        <div class="featured-thumb bg-cover" style="background-image: url('{{image}}')"></div>
+                                        <div class="post-content">
+                                            <div class="post-date">
+                                                <span><i class="fal fa-calendar-alt"></i>27th March 2021</span>
+                                            </div>
+                                            <h4><a href="{{url}}">{{title}}</a></h4>
+                                            <p>{{short_description}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                {{/related_news}}
+                            </div>
+                        </div>
+                        
+
+                        
+                        
+                    </div>
+                </div>
+                
+               
+            </div>
+        </div>
+    </section>
+
+
+
+
+{{block_types}}
+{{template}}
+{{/block_types}}

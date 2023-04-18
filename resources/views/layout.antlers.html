@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     {{extra_scripts:header_extra_scripts}}
+
+    
+</head>
+
+<body class="body-wrapper">    
+    
+    <!-- preloader -->
+    <div id="preloader" class="preloader">
+        <div class="animation-preloader">
+            <div class="spinner">                
+            </div>
+                <div class="txt-loading">
+                    {{header:spinner_loading}}
+                </div>
+            <p class="text-center">Loading</p>
+        </div>
+        <div class="loader">
+            <div class="row">
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- welcome content start from here -->
+
+
+
+    
+            {{ template_content }}
+            
+            
+           {{footer:template}} 
+            <div class="footer-bottom">
+            <div class="container text-center">
+                <div class="footer-bottom-content">
+                    {{extra_scripts:footer_copyright}}
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    {{extra_scripts:footer_extra_scripts}}
+    
+    
+</body>
+
+</html>

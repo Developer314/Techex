@@ -1,0 +1,13 @@
+title: 'Our Team'
+template: our_team/show
+layout: layout
+revisions: false
+route: 'our_team/{slug}'
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'

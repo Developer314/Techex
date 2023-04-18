@@ -1,0 +1,160 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: content
+        field:
+          type: markdown
+          localizable: true
+          display: Content
+          instructions_position: above
+          listable: hidden
+          visibility: visible
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: false
+          smartypants: false
+          antlers: false
+          default: |-
+            **A Real Store For Digital Solutions**
+            wquis autem vel eum iure reprehenderit quiin voluptate velit esse quam nihil molestiae onsequatur, vel illum solorem eum fugiat quo voluptas nulla pariatur laudantium totam rem aperquae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quiluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepte ursint occaecat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+            How It Works Benefit For Projects
+            On the other hand, we denounce with righteous indignation and dislike men who are beguiled and demoralized by the charms of pleasure of the moment so blinded by desire that they cannot foresee the pain and trouble that are bound to ensue and equals.
+
+            Need To Know To Increase Mobile Checkout Conversions
+            Improve Your Design Process With Data-Based
+            Analyzing Your Company’s Social Media Presence With IBM Watson
+      -
+        handle: main_image
+        field:
+          mode: list
+          container: assets
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: 'Main Image'
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: additional_images
+        field:
+          mode: list
+          container: assets
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          display: 'Additional Images'
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: client
+        field:
+          input_type: text
+          antlers: false
+          default: 'Robert C. Saavedra'
+          display: Client
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: project
+        field:
+          input_type: text
+          antlers: false
+          default: 'IT Consulting'
+          display: Project
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: category
+        field:
+          options:
+            business: Business
+            consulting: Consulting
+            product: Product
+            engineering: Engineering
+          multiple: true
+          clearable: false
+          searchable: true
+          taggable: false
+          push_tags: false
+          cast_booleans: false
+          default: business
+          display: Category
+          type: select
+          icon: select
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: date
+        field:
+          input_type: text
+          antlers: false
+          default: '30 Aug 2021'
+          display: Date
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: service
+        field:
+          input_type: text
+          antlers: false
+          default: 'Digital Solutions'
+          display: Service
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+      -
+        import: sidebar
+  seo:
+    display: SEO
+    fields:
+      -
+        import: seo
+  extra_scripts:
+    display: 'Extra Scripts'
+    fields: {  }
+  block_types:
+    display: 'Block types'
+    fields:
+      -
+        import: block_types
+title: 'Case Study'

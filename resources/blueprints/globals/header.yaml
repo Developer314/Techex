@@ -1,0 +1,964 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: site_logo
+        field:
+          mode: list
+          container: assets
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: 'Site Logo'
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: button_link
+        field:
+          display: 'Button Link'
+          type: link
+          icon: link
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: button_link_text
+        field:
+          input_type: text
+          antlers: false
+          default: Consultancy
+          display: 'Button Link Text'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: button_target
+        field:
+          options:
+            _self: Self
+            _blank: 'New Tab'
+          multiple: false
+          clearable: false
+          searchable: true
+          taggable: false
+          push_tags: false
+          cast_booleans: false
+          default: _self
+          display: 'Button Target'
+          type: select
+          icon: select
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: email_address
+        field:
+          input_type: text
+          antlers: false
+          default: info@revolve314.com
+          display: 'Email Address'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: phone_number
+        field:
+          input_type: text
+          antlers: false
+          default: '+918907289865'
+          display: 'Phone Number'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: opening_hour
+        field:
+          input_type: text
+          antlers: false
+          default: '08:00 am - 05:00 pm'
+          display: 'Opening Hour'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: header_top_text
+        field:
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: false
+          smartypants: false
+          antlers: false
+          default: '<p>Welcome to Techex  IT Services Company. <a href="faq.html">Setting &amp; Parivacy, Faq</a></p>'
+          display: 'Header Top Text'
+          type: markdown
+          icon: markdown
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: social_icons
+        field:
+          fields:
+            -
+              handle: icon
+              field:
+                options:
+                  fa-facebook-f: Facebook
+                  fa-twitter: Twitter
+                  fa-behance: Behance
+                  fa-youtube: Youtube
+                multiple: false
+                clearable: false
+                searchable: true
+                taggable: false
+                push_tags: false
+                cast_booleans: false
+                display: Icon
+                type: select
+                icon: select
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: url
+              field:
+                input_type: text
+                antlers: false
+                display: URL
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+          mode: table
+          reorderable: true
+          display: 'Social Icons'
+          type: grid
+          icon: grid
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: address
+        field:
+          input_type: text
+          antlers: false
+          default: '55 Clark St, Brooklyn, NY 11201, USA'
+          display: Address
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: spinner_loading
+        field:
+          antlers: false
+          default: |-
+            <span data-text-preloader="T" class="letters-loading">
+                                    T
+                                </span>
+                                <span data-text-preloader="E" class="letters-loading">
+                                    E
+                                </span>
+                                <span data-text-preloader="C" class="letters-loading">
+                                    C
+                                </span>
+                                <span data-text-preloader="H" class="letters-loading">
+                                    H
+                                </span>
+                                <span data-text-preloader="E" class="letters-loading">
+                                    E
+                                </span>
+                                <span data-text-preloader="X" class="letters-loading">
+                                    X
+                                </span>
+          display: spinner_loading
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  site_menu:
+    display: 'Site Menu'
+    fields:
+      -
+        handle: sitemenu
+        field:
+          antlers: false
+          default: |-
+            <ul>
+                                        <li><a href="/">Home <i class="fas fa-angle-down"></i></a>
+                                            <ul class="sub-menu">
+                                                <li><a href="/">home 1</a></li>
+                                                <li><a href="/home-2">home 2</a></li>
+                                                <li><a href="/home-3">home 3</a></li>
+                                                <li><a href="/home-4">home 4</a></li>
+                                                <li><a href="/home-5">home 5</a></li>
+                                                <li><a href="/home-6">home 6</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="/about-us">About</a> </li>
+                                        <li><a href="/services">Services</a></li>
+                                        <li><a href="#">Pages <i class="fas fa-angle-down"></i></a>
+                                            <ul class="sub-menu">
+                                                <li><a href="/team">Team</a></li>
+                                                <li><a href="/case-study">Case Studies</a></li>
+                                                <li><a href="/news">News</a></li>
+                                                
+                                            </ul>
+                                        </li>
+                                        <li><a href="/news">News</a></li>
+                                        <li><a href="/contact">Contact</a></li>
+                                    </ul>
+          display: Sitemenu
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: mobile_menu
+        field:
+          antlers: true
+          default: |-
+            <ul class="metismenu" id="mobile-menu"> 
+                                                <li><a class="has-arrow" href="#">Homes</a>
+                                                   <ul class="sub-menu">
+                                                <li><a href="/">home 1</a></li>
+                                                <li><a href="/home-2">home 2</a></li>
+                                                <li><a href="/home-3">home 3</a></li>
+                                                <li><a href="/home-4">home 4</a></li>
+                                                <li><a href="/home-5">home 5</a></li>
+                                                <li><a href="/home-6">home 6</a></li>
+                                            </ul>
+                                                </li>
+                                               <li><a href="/about-us">About</a> </li>
+                                        <li><a href="/services">Services</a></li>
+                                        <li><a href="#">Pages <i class="fas fa-angle-down"></i></a>
+                                            <ul class="sub-menu">
+                                                <li><a href="/team">Team</a></li>
+                                                <li><a href="/case-study">Case Studies</a></li>
+                                                <li><a href="/news">News</a></li>
+                                                
+                                            </ul>
+                                        </li>
+                                        <li><a href="/news">News</a></li>
+                                        <li><a href="contact">Contact</a></li>
+                                            </ul>
+          display: 'Mobile menu'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  'Header Style 1':
+    display: 'Header Style 1'
+    fields:
+      -
+        handle: h1_logo
+        field:
+          mode: list
+          container: assets
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: Logo
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: header_1
+        field:
+          antlers: true
+          display: 'Header 1'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          default: |-
+            <header class="header-wrap header-1">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-6 col-sm-5 col-xl-2">
+                                <div class="logo">
+                                    <a href="/" title="{{ title ?? site:name }}">
+                                        <img src="{{header:site_logo}}" alt="{{ title ?? site:name }}">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xl-7 d-none d-xl-block">
+                                <div class="main-menu">
+                                    {{header:sitemenu}}
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-sm-6 d-none d-sm-block pl-xl-0 text-right">
+                                <a href="{{header:button_link}}" target="{{header:button_target}}" title="{{header:button_link_text}}" class="theme-btn">{{header:button_link_text}} <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="mobile-nav-bar d-block col-sm-1 col-6 d-xl-none">
+                                <div class="mobile-nav-wrap">                    
+                                    <div id="hamburger">
+                                        <i class="fal fa-bars"></i>
+                                    </div>
+                                    <!-- mobile menu - responsive menu  -->
+                                    <div class="mobile-nav">
+                                        <button type="button" class="close-nav">
+                                            <i class="fal fa-times-circle"></i>
+                                        </button>
+                                        <nav class="sidebar-nav">
+                                            {{header:mobile_menu}}
+                                        </nav>
+
+                                        <div class="action-bar">
+                                            <a href="mailto:{{header:email_address}}"><i class="fal fa-envelope-open-text"></i>{{header:email_address}}</a>
+                                            <a href="tel:{{header:phone_number}}"><i class="fal fa-phone"></i>{{header:phone_number}}</a>
+                                            <a href="{{header:button_link}}" target="{{header:button_target}}" title="{{header:button_link_text}}" class="d-btn theme-btn black" >{{header:button_link_text}}</a>
+                                        </div>
+                                    </div>                            
+                                </div>
+                                <div class="overlay"></div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+  header_style_2:
+    display: 'Header Style 2'
+    fields:
+      -
+        handle: h2_logo
+        field:
+          mode: list
+          container: assets
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: Logo
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: header_2
+        field:
+          antlers: true
+          default: |-
+            <header class="header-wrap header-2"> 
+                    <div class="top-header d-none d-md-block"> 
+                        <div class="container-flud">
+                            <div class="row">
+                                <div class="col-md-7 pr-md-0 col-12">
+                                    <div class="header-cta">
+                                        <ul>
+                                            <li>
+                                              <a href="mailto:{{header:email_address}}"><i class="fal fa-envelope"></i> {{header:email_address}}</a>
+                                            </li>
+                                            <li>
+                                              <a href="tel:{{header:phone_number}}"><i class="fal fa-phone"></i>{{header:phone_number}}</a>
+                                            </li>
+                                          </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-12">
+                                    <div class="header-right-cta d-flex justify-content-end">
+                                        <div class="social-profile mr-30">
+            	                            {{header:social_icons}}
+                                            <a href="{{url}}" target="_blank"><i class="fab {{icon}}"></i></a>
+                                            
+                                            {{/header:social_icons}}
+                                        </div>
+                                        |
+                                        <div class="lan-select ml-30">
+                                            <form>
+                                                <select id="lan">
+                                                    <option>English</option>
+                                                    <option>China</option>
+                                                    <option>Bangla</option>
+                                                    <option>Hindi</option>
+                                                </select>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main-header-wraper">
+                        <div class="container-fluid">
+                            <div class="row align-items-center justify-content-between">
+                                <div class="header-logo">
+                                    <div class="logo">
+                                        <a href="/" title="{{ title ?? site:name }}">
+                                        <img src="{{header:site_logo}}" alt="{{ title ?? site:name }}">
+                                    </a>
+                                    </div>
+                                </div>
+                                <div class="header-menu d-none d-xl-block">
+                                    <div class="main-menu">
+                                        {{header:sitemenu}}
+                                    </div>
+                                </div>
+                                <div class="header-right d-flex align-items-center">
+                                    <div class="header-btn-cta">
+                                        <a href="{{header:button_link}}" target="{{header:button_target}}" class="theme-btn" title="{{header:button_link_text}}">{{header:button_link_text}} <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                    <div class="mobile-nav-bar d-block ml-3 ml-sm-5 d-xl-none">
+                                        <div class="mobile-nav-wrap">                    
+                                            <div id="hamburger">
+                                                <i class="fal fa-bars"></i>
+                                            </div>
+                                            <!-- mobile menu - responsive menu  -->
+                                            <div class="mobile-nav">
+                                                <button type="button" class="close-nav">
+                                                    <i class="fal fa-times-circle"></i>
+                                                </button>
+                                                <nav class="sidebar-nav">
+                                                    {{header:mobile_menu}}
+                                                </nav>
+                    
+                                                <div class="action-bar">
+                                                    <a href="mailto:{{header:email_address}}"><i class="fal fa-envelope-open-text"></i>{{header:email_address}}</a>
+                                                    <a href="tel:{{header:phone_number}}"><i class="fal fa-phone"></i>{{header:phone_number}}</a>
+                                                    <a href="{{header:button_link}}" target="{{header:button_target}}" title="{{header:button_link_text}}" class="d-btn theme-btn black">{{header:button_link_text}}</a>
+                                                </div>
+                                            </div>                            
+                                        </div>
+                                        <div class="overlay"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+          display: 'Header 2'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  header_style_3:
+    display: 'Header Style 3'
+    fields:
+      -
+        handle: h3_logo
+        field:
+          mode: list
+          container: assets
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: Logo
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: header_3
+        field:
+          antlers: true
+          default: |-
+            <header class="header-wrap header-3">
+                    <div class="top-header">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12 col-12 text-center">
+                                    <div class="welcome-text">
+                                        {{header:header_top_text}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="middle-header-wraper">
+                        <div class="container-fluid">
+                            <div class="row align-items-center justify-content-between">
+                                <div class="col-xl-2 col-lg-4 col-6 align-items-center d-flex">
+                                    <div class="mobile-nav-bar mr-20">
+                                        <div class="mobile-nav-wrap">                    
+                                            <div id="hamburger">
+                                                <i class="fal fa-bars"></i>
+                                            </div>
+                                            <!-- mobile menu - responsive menu  -->
+                                            <div class="mobile-nav">
+                                                <button type="button" class="close-nav">
+                                                    <i class="fal fa-times-circle"></i>
+                                                </button>
+                                                <nav class="sidebar-nav">
+                                                    {{header:mobile_menu}}
+                                                </nav>
+                    
+                                                <div class="action-bar">
+                                                    <a href="mailto:{{header:email_address}}"><i class="fal fa-envelope-open-text"></i>{{header:email_address}}</a>
+                                                    <a href="tel:{{header:phone_number}}"><i class="fal fa-phone"></i>{{header:phone_number}}</a>
+                                                    <a href="{{header:button_link}}" target="{{header:button_target}}"  class="d-btn theme-btn black">{{header:button_link_text}}</a>
+                                                </div>
+                                            </div>                            
+                                        </div>
+                                        <div class="overlay"></div>
+                                    </div>
+
+                                    <div class="header-logo">
+                                        <div class="logo">
+                                            <a href="/" title="{{ title ?? site:name }}">
+                                        <img src="{{header:site_logo}}" alt="{{ title ?? site:name }}">
+                                    </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-8 p-lg-0 header-menu-wrap">
+                                    <div class="header-menu-wrap">
+                                        <div class="menu-top-bar">
+                                            <div class="contact-info-grid">
+                                                <div class="single-menu-box">
+                                                    <div class="icon">
+                                                        <i class="fal fa-envelope-open"></i>
+                                                    </div>
+                                                    <div class="content">
+                                                        <h3>Email Us</h3>
+                                                        <span>{{header:email_address}}</span>
+                                                    </div>
+                                                </div>
+                                                <div class="single-menu-box">
+                                                    <div class="icon">
+                                                        <i class="fal fa-phone-volume"></i>
+                                                    </div>
+                                                    <div class="content">
+                                                        <h3>Contact</h3>
+                                                        <span>{{header:phone_number}}</span>
+                                                    </div>
+                                                </div>
+                                                <div class="single-menu-box">
+                                                    <div class="icon">
+                                                        <i class="fal fa-clock"></i>
+                                                    </div>
+                                                    <div class="content">
+                                                        <h3>Opening Hour</h3>
+                                                        <span>{{header:opening_hour}}</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="side-toggle-menu">
+                                                <i class="fal fa-bars"></i>
+                                            </div>
+                                        </div>
+                
+                                        <div class="main-menu-wrapper d-flex justify-content-center">
+                                            <div class="main-menu">
+                                               {{header:sitemenu}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-2 col-lg-3 col-6 pl-lg-0 text-right">
+                                    <div class="header-btn-cta">
+                                        <a href="{{header:button_link}}" target="{{header:button_target}}" title="{{header:button_link_text}}" class="theme-btn">{{header:button_link_text}} <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+          display: 'Header 3'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  header_style_4:
+    display: 'Header Style 4'
+    fields:
+      -
+        handle: h4_logo
+        field:
+          mode: list
+          container: assets
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: Logo
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: header_4
+        field:
+          antlers: true
+          default: |-
+            <header class="header-wrap header-4">
+                    <div class="top-header d-none d-lg-block">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-7 pr-md-0 col-12">
+                                    <div class="header-cta">
+                                        <ul>
+                                            <li>
+                                              <a href="mailto:{{header:email_address}}"><i class="fal fa-envelope"></i> {{header:email_address}}</a>
+                                            </li>
+                                            <li>
+                                              <a href="tel:{{header:phone_number}}"><i class="fal fa-phone"></i>{{header:phone_number}}</a>
+                                            </li>
+                                          </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-12 text-white">
+                                    <div class="header-right-cta d-flex justify-content-end">
+                                        <div class="social-profile mr-30">
+                                            {{header:social_icons}}
+                                            <a href="{{url}}" target="_blank"><i class="fab {{icon}}"></i></a>
+                                            
+                                            {{/header:social_icons}}
+                                        </div>
+                                        |
+                                        <div class="lan-select ml-30">
+                                            <form>
+                                                <select id="lan">
+                                                    <option>English</option>
+                                                    <option>China</option>
+                                                    <option>Bangla</option>
+                                                    <option>Hindi</option>
+                                                </select>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main-header-wraper">
+                        <div class="container">
+                            <div class="row align-items-center justify-content-between">
+                                <div class="header-logo">
+                                    <div class="logo">
+                                        <a href="/" title="{{ title ?? site:name }}">
+                                        <img src="{{header:site_logo}}" alt="{{ title ?? site:name }}">
+                                    </a>
+                                    </div>
+                                </div>
+                                <div class="header-menu d-none d-xl-block">
+                                    <div class="main-menu">
+                                        {{header:sitemenu}}
+                                    </div>
+                                </div>
+                                <div class="header-right d-flex align-items-center">
+                                    <div class="header-btn-cta">
+                                        <a href="{{header:button_link}}" target="{{header:button_target}}" title="{{header:button_link_text}}" class="theme-btn">{{header:button_link_text}} <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                    <div class="mobile-nav-bar d-block ml-3 ml-sm-5 d-xl-none">
+                                        <div class="mobile-nav-wrap">                    
+                                            <div id="hamburger">
+                                                <i class="fal fa-bars"></i>
+                                            </div>
+                                            <!-- mobile menu - responsive menu  -->
+                                            <div class="mobile-nav">
+                                                <button type="button" class="close-nav">
+                                                    <i class="fal fa-times-circle"></i>
+                                                </button>
+                                                <nav class="sidebar-nav">
+                                                    {{header:mobile_menu}}
+                                                </nav>
+                    
+                                                <div class="action-bar">
+                                                    <a href="mailto:{{header:email_address}}"><i class="fal fa-envelope-open-text"></i>{{header:email_address}}</a>
+                                                    <a href="tel:{{header:phone_number}}"><i class="fal fa-phone"></i>{{header:phone_number}}</a>
+                                                    <a href="{{header:button_link}}" target="{{header:button_target}}" title="{{header:button_link_text}}" class="d-btn theme-btn black">{{header:button_link_text}}</a>
+                                                </div>
+                                            </div>                            
+                                        </div>
+                                        <div class="overlay"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+          display: 'Header 4'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  header_style_5:
+    display: 'Header Style 5'
+    fields:
+      -
+        handle: h5_logo
+        field:
+          mode: list
+          container: assets
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: Logo
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: header_5
+        field:
+          antlers: true
+          default: |-
+            <header class="header-wrap header-5">
+                    <div class="top-header d-none d-md-block">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="header-cta">
+                                        <ul>
+                                            <li><a href="#"><i class="icon-location-dot"></i>{{header:address}}</a></li>
+                                            <li><a href="mailto:techex@gmail.com"><i class="fal fa-envelope"></i>{{header:email_address}}</a></li>
+                                            <li><a href="tel:{{header:phone_number}}"><i class="fal fa-phone"></i>{{header:phone_number}}</a></li>
+                                          </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="header-right-cta d-flex justify-content-end">
+                                        <div class="social-profile">
+                                            {{header:social_icons}}
+                                            <a href="{{url}}" target="_blank"><i class="fab {{icon}}"></i></a>
+                                            
+                                            {{/header:social_icons}}
+                                        </div>
+                                        |
+                                        <div class="lan-select">
+                                            <form>
+                                                <select id="lan">
+                                                    <option>English</option>
+                                                    <option>China</option>
+                                                    <option>Bangla</option>
+                                                    <option>Hindi</option>
+                                                </select>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main-header-wraper">
+                        <div class="container-fluid">
+                            <div class="row align-items-center justify-content-between">
+                                <div class="header-logo">
+                                    <div class="logo">
+                                         <a href="/" title="{{ title ?? site:name }}">
+                                        <img src="{{header:site_logo}}" alt="{{ title ?? site:name }}">
+                                    </a>
+                                    </div>
+                                </div>
+                                <div class="header-menu d-none d-xl-block">
+                                    <div class="main-menu">
+                                         {{header:sitemenu}}
+                                    </div>
+                                </div>
+                                <div class="header-right d-flex align-items-center">
+                                    <div class="header-btn-cta">
+                                        <div class="header-search">
+                                            <a class="search-toggle" data-selector=".header-search">
+                                                <span class="fas fa-search"></span>
+                                            </a>
+
+                                            <form class="search-box" action="#" method="get">
+                                                <div class="form-group d-flex align-items-center">
+                                                    <input type="search" name="s" value="" class="search-input" id="search" placeholder="Search">
+                                                    <button type="submit" class="search-submit"><i class="icon-search"></i></button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <a href="{{header:button_link}}" target="{{header:button_target}}" class="theme-btn" title="{{header:button_link_text}}">{{header:button_link_text}} <i class="icon-arrow-right-1"></i></a>
+                                    </div>
+                                    <div class="mobile-nav-bar d-block ml-3 ml-sm-4 d-xl-none">
+                                        <div class="mobile-nav-wrap">                    
+                                            <div id="hamburger">
+                                                <i class="fal fa-bars"></i>
+                                            </div>
+                                            <!-- mobile menu - responsive menu  -->
+                                            <div class="mobile-nav">
+                                                <button type="button" class="close-nav">
+                                                    <i class="fal fa-times-circle"></i>
+                                                </button>
+                                                <nav class="sidebar-nav">
+                                                    {{header:mobile_menu}}
+                                                </nav>
+                    
+                                                <div class="action-bar">
+                                                    <a href="#"><i class="icon-location-dot"></i>{{header:address}}</a>
+                                                    <a href="mailto:{{header:email_address}}"><i class="fal fa-envelope-open-text"></i>{{header:email_address}}</a>
+                                                    <a href="tel:{{header:phone_number}}"><i class="fal fa-phone"></i>{{header:phone_number}}</a>
+                                                    <a href="{{header:button_link}}" target="{{header:button_target}}" title="{{header:button_link_text}}"  class="d-btn theme-btn black">{{header:button_link_text}} <i class="icon-arrow-right-1"></i></a>
+                                                </div>
+                                            </div>                            
+                                        </div>
+                                        <div class="overlay"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <div class="header-gutter"></div><!-- /header-gutter -->
+          display: 'Header 5'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  header_style_6:
+    display: 'Header Style 6'
+    fields:
+      -
+        handle: h6_logo
+        field:
+          mode: list
+          container: assets
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: Logo
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: header_6
+        field:
+          antlers: true
+          default: |-
+            <header class="header-wrap header-5">
+                    <div class="top-header d-none d-md-block">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="header-cta">
+                                        <ul>
+                                            <li><a href="#"><i class="icon-location-dot"></i>{{header:address}}</a></li>
+                                            <li><a href="mailto:{{header:email_address}}"><i class="fal fa-envelope"></i>{{header:email_address}}</a></li>
+                                            <li><a href="tel:{{header:phone_number}}"><i class="fal fa-phone"></i>{{header:phone_number}}</a></li>
+                                          </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-5">
+                                    <div class="header-right-cta d-flex justify-content-end">
+                                        <div class="social-profile">
+                                            {{header:social_icons}}
+                                            <a href="{{url}}" target="_blank"><i class="fab {{icon}}"></i></a>
+                                            
+                                            {{/header:social_icons}}
+                                        </div>
+                                        |
+                                        <div class="lan-select">
+                                            <form>
+                                                <select id="lan">
+                                                    <option>English</option>
+                                                    <option>China</option>
+                                                    <option>Bangla</option>
+                                                    <option>Hindi</option>
+                                                </select>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main-header-wraper">
+                        <div class="container-fluid">
+                            <div class="row align-items-center justify-content-between">
+                                <div class="header-logo">
+                                    <div class="logo">
+                                         <a href="/" title="{{ title ?? site:name }}">
+                                        <img src="{{header:site_logo}}" alt="{{ title ?? site:name }}">
+                                    </a>
+                                    </div>
+                                </div>
+                                <div class="header-menu d-none d-xl-block">
+                                    <div class="main-menu">
+                                        {{header:sitemenu}}
+                                    </div>
+                                </div>
+                                <div class="header-right d-flex align-items-center">
+                                    <div class="header-btn-cta">
+                                        <div class="header-search">
+                                            <a class="search-toggle" data-selector=".header-search">
+                                                <span class="fas fa-search"></span>
+                                            </a>
+
+                                            <form class="search-box" action="#" method="get">
+                                                <div class="form-group d-flex align-items-center">
+                                                    <input type="search" name="s" value="" class="search-input" id="search" placeholder="Search">
+                                                    <button type="submit" class="search-submit"><i class="icon-search"></i></button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <a href="{{header:button_link}}" target="{{header:button_target}}" class="theme-btn" title="{{header:button_link_text}}">{{header:button_link_text}} <i class="icon-arrow-right-1"></i></a>
+                                    </div>
+                                    <div class="mobile-nav-bar d-block ml-3 ml-sm-4 d-xl-none">
+                                        <div class="mobile-nav-wrap">                    
+                                            <div id="hamburger">
+                                                <i class="fal fa-bars"></i>
+                                            </div>
+                                            <!-- mobile menu - responsive menu  -->
+                                            <div class="mobile-nav">
+                                                <button type="button" class="close-nav">
+                                                    <i class="fal fa-times-circle"></i>
+                                                </button>
+                                                <nav class="sidebar-nav">
+                                                    {{header:mobile_menu}}
+                                                </nav>
+                    
+                                                <div class="action-bar">
+                                                    <a href="#"><i class="icon-location-dot"></i>{{header:address}}</a>
+                                                    <a href="mailto:{{header:email_address}}"><i class="fal fa-envelope-open-text"></i>{{header:email_address}}</a>
+                                                    <a href="tel:{{header:phone_number}}"><i class="fal fa-phone"></i>{{header:phone_number}}</a>
+                                                    <a href="{{header:button_link}}" target="{{header:button_target}}" class="d-btn theme-btn black" title="{{header:button_link_text}}">{{header:button_link_text}} <i class="icon-arrow-right-1"></i></a>
+                                                </div>
+                                            </div>                            
+                                        </div>
+                                        <div class="overlay"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+          display: 'Header 6'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible

@@ -1,0 +1,89 @@
+title: Sidebar
+fields:
+  -
+    handle: header_style
+    field:
+      options:
+        header_1: 'Header 1'
+        header_2: 'Header 2'
+        header_3: 'Header 3'
+        header_4: 'Header 4'
+        header_5: 'Header 5'
+        header_6: 'Header 6'
+      multiple: false
+      clearable: false
+      searchable: true
+      taggable: false
+      push_tags: false
+      cast_booleans: false
+      default: header_1
+      display: 'Header Style'
+      type: select
+      icon: select
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: inside_page
+    field:
+      default: false
+      display: 'Inside Page'
+      type: toggle
+      icon: toggle
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: banner_image
+    field:
+      mode: list
+      container: assets
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      max_files: 1
+      display: 'Banner Image'
+      type: assets
+      icon: assets
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: banner_text
+    field:
+      input_type: text
+      antlers: false
+      default: TECHX
+      display: 'Banner Text'
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: banner_title
+    field:
+      input_type: text
+      antlers: false
+      default: 'About Us'
+      display: 'Banner Title'
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: breadcrumb
+    field:
+      antlers: false
+      default: |-
+        <ol class="breadcrumb">
+                                  <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                  <li class="breadcrumb-item active" aria-current="page">team</li>
+                                </ol>
+      display: Breadcrumb
+      type: textarea
+      icon: textarea
+      listable: hidden
+      instructions_position: above
+      visibility: visible

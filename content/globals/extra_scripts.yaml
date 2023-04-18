@@ -1,0 +1,76 @@
+title: 'Extra Scripts'
+data:
+  fav_icon: favicon.png
+  header_extra_scripts: |-
+    {{if meta_title}}
+        <title>{{ meta_title }}</title> 
+        {{else}}
+        <title>{{ title ?? site:name }}</title>
+        {{/if}}
+        
+        {{if meta_keywords}}
+        <meta name = "keywords" content = "{{meta_keywords}}" />
+        {{/if}}
+        
+        {{if meta_description}}
+        <meta name = "description" content = "Learning about Meta Tags." />
+        {{/if }}
+        
+        {{if other_meta_tags}}
+        
+        {{other_meta_tags}}
+        
+        <meta {{meta_tag_name}} = "{{meta_tag_value}}" {{meta_tag_value_name}} = "{{meta_tag_value_name_value}}" />
+        
+        
+        {{/other_meta_tags}}
+        
+        {{/if}}
+        
+        {{page_header_extra}}
+        
+        
+        <!-- ========== Favicon Icon ========== -->
+        <link rel="shortcut icon" href="{{extra_scripts:fav_icon}}">
+        <!-- ===========  All Stylesheet ================= -->
+        <!--  Icon css plugins -->
+        <link rel="stylesheet" href="/techex/assets/css/icons.css">
+        <!--  animate css plugins -->
+        <link rel="stylesheet" href="/techex/assets/css/animate.css">
+        <!--  magnific-popup css plugins -->
+        <link rel="stylesheet" href="/techex/assets/css/magnific-popup.css">
+        <!--  owl carosuel css plugins -->
+        <link rel="stylesheet" href="/techex/assets/css/owl.carousel.min.css">
+        <!-- metis menu css file -->
+        <link rel="stylesheet" href="/techex/assets/css/metismenu.css">
+        <!--  owl theme css plugins -->
+        <link rel="stylesheet" href="/techex/assets/css/owl.theme.css">
+        <!--  Bootstrap css plugins -->
+        <link rel="stylesheet" href="/techex/assets/css/bootstrap.min.css">
+        <!--  main style css file -->
+        <link rel="stylesheet" href="/techex/assets/css/style.css">
+        <!-- template main style css file -->
+        <link rel="stylesheet" href="/techex/style.css">
+  footer_extra_scripts: |-
+    <!--  ALl JS Plugins
+        ====================================== -->
+        <script src="/techex/assets/js/jquery.min.js"></script>
+        <script src="/techex/assets/js/modernizr.min.js"></script>
+        <script src="/techex/assets/js/jquery.easing.js"></script>
+        <script src="/techex/assets/js/popper.min.js"></script>
+        <script src="/techex/assets/js/bootstrap.min.js"></script>
+        <script src="/techex/assets/js/isotope.pkgd.min.js"></script>
+        <script src="/techex/assets/js/imageload.min.js"></script>
+        <script src="/techex/assets/js/scrollUp.min.js"></script>
+        <script src="/techex/assets/js/owl.carousel.min.js"></script>
+        <script src="/techex/assets/js/magnific-popup.min.js"></script>
+        <script src="/techex/assets/js/easypiechart.min.js"></script>
+        <script src="/techex/assets/js/counterup.min.js"></script>
+        <script src="/techex/assets/js/wow.min.js"></script>
+        <script src="/techex/assets/js/metismenu.js"></script>
+        <script src="/techex/assets/js/timeline.min.js"></script>
+        <script src="/techex/assets/js/ajax-mail.js"></script>
+        <script src="/techex/assets/js/active.js"></script>
+
+    {{page_footer_extra}}
+  footer_copyright: '© 2023 <a href="http://www.revolve314.com" target="_blank">Revolve 314</a>. All Rights Reserved'

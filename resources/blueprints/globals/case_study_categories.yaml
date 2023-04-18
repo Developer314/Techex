@@ -1,0 +1,20 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: filters
+        field:
+          antlers: false
+          default: |-
+            <button data-filter="*" class="active">All</button>
+                                    <button data-filter=".business">Business</button>
+                                    <button data-filter=".consulting">Consulting</button>
+                                    <button data-filter=".product">Product</button>
+                                    <button data-filter=".engineering">Engineering</button>
+          display: Filters
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible

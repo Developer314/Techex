@@ -1,0 +1,41 @@
+
+{{if header_style == "header_1"}}
+{{header:header_1}}
+{{/if}}
+{{if header_style == "header_2"}}
+{{header:header_2}}
+{{/if}}
+{{if header_style == "header_3"}}
+{{header:header_3}}
+{{/if}}
+{{if header_style == "header_4"}}
+{{header:header_4}}
+{{/if}}
+{{if header_style == "header_5"}}
+{{header:header_5}}
+{{/if}}
+{{if header_style == "header_6"}}
+{{header:header_6}}
+{{/if}}
+
+
+{{if inside_page}}
+<section class="page-banner-wrap bg-cover" style="background-image: url('{{banner_image}}')">
+        <div class="banner-text">{{banner_text}}</div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-12 col-12">
+                    <div class="page-heading text-white">
+                        <div class="page-title">
+                            <h1>{{banner_title}}</h1>
+                        </div>
+                    </div>
+
+                    <nav aria-label="breadcrumb">
+                        {{breadcrumb}}
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+{{/if}}
