@@ -10,121 +10,10 @@ sections:
           validate:
             - required
       -
-        handle: short_description
-        field:
-          antlers: false
-          default: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidid unt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreh enderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
-          display: 'Short Description'
-          type: textarea
-          icon: textarea
-          listable: hidden
-          instructions_position: above
-          visibility: visible
-      -
         handle: content
         field:
           type: markdown
           localizable: true
-          display: 'News Data'
-          instructions_position: above
-          listable: hidden
-          visibility: visible
-          restrict: false
-          automatic_line_breaks: true
-          automatic_links: false
-          escape_markup: false
-          smartypants: false
-          antlers: false
-          default: |-
-            Flyingfish Kafue pike cow shark California smoothtongue golden loach temperate ocean-bass gulper eel. Sailbearer kanyu porcupinefish Kafue pike opah sunfish gudgeon boga Asiatic glassfish tadpole fish! Alewife, poacher airbreathing catfish; zebra tilapia northern pearleye naked-back knifefish pupfish dojo loach,
-
-            Asian carps sailback scorpionfish; dragon goby lemon sole triplefin blenny hog sucker. Smelt sleeper shovelnose sturgeon merluccid hake cow shark herring smelt trout-perch barbeled houndshark. Shell-ear Asian carps blackfish Port Jackson shark Atlantic saury. Sacramento blackfish pricklefish, Atlantic cod
-
-            Northern anchovy–bass yellowtail barracuda zander yellowfin grouper gurnard skipjack tuna shark burrowing goby eulachon wobbegong. Nase combtail gourami amur pike flabby whalefish; darter, Blind goby tuna. Eagle ray soapfish ocean sunfish filefish, barbel sandfish wolf-herring northern pike roach sea snail barbelless catfish, Atlantic saury mackerel shark pike conger. Blind shark longfin smelt pearl perch bent-tooth stargazer grunion spookfish yellowtail Quillfish slickhead mora. snake worm mackerel sockeye salmon banjo catfish toadfish sauger four-eyed fish
-
-
-            A cleansing hot shower or bath
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidid unt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreh enderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-
-            Viral dreamcatcher keytar typewriter, aest hetic offal umami. Aesthetic polaroid pug pitchfork post-ironic.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidid unt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute.
-
-            We track every dollar
-            We’re an open book
-            100% goes to the field
-            Received the highest grades
-            Lorem ipsum dolor sit amet, consectetur adipisicing
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus
-
-
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
-
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus.
-      -
-        handle: image
-        field:
-          mode: list
-          container: assets
-          restrict: false
-          allow_uploads: true
-          show_filename: true
-          max_files: 1
-          display: Image
-          type: assets
-          icon: assets
-          listable: hidden
-          instructions_position: above
-          visibility: visible
-      -
-        handle: written_by
-        field:
-          mode: default
-          create: true
-          collections:
-            - authors
-          display: 'Written By'
-          type: entries
-          icon: entries
-          listable: hidden
-          instructions_position: above
-          visibility: visible
-      -
-        handle: author
-        field:
-          input_type: text
-          antlers: false
-          default: 'John Doe'
-          display: Author
-          type: text
-          icon: text
-          listable: hidden
-          instructions_position: above
-          visibility: visible
-      -
-        handle: youtube_link
-        field:
-          input_type: text
-          antlers: false
-          default: 'https://www.youtube.com/watch?v=LN6zOrJJGKQ&t=7s'
-          display: 'Youtube  Link'
-          type: text
-          icon: text
-          listable: hidden
-          instructions_position: above
-          visibility: visible
-      -
-        handle: related_news
-        field:
-          mode: default
-          create: true
-          collections:
-            - news
-          display: 'Related News'
-          type: entries
-          icon: entries
-          listable: hidden
-          instructions_position: above
-          visibility: visible
   sidebar:
     display: Sidebar
     fields:
@@ -134,21 +23,14 @@ sections:
           type: slug
           localizable: true
       -
-        handle: date
-        field:
-          type: date
-          required: true
-          validate:
-            - required
-      -
         import: sidebar
   seo:
     display: SEO
     fields:
       -
         import: seo
-  header_extra:
-    display: 'Header Extra'
+  extra_scripts:
+    display: 'Extra Scripts'
     fields:
       -
         import: extra_scripts
