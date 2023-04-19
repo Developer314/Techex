@@ -71,6 +71,7 @@ fields:
       listable: hidden
       instructions_position: above
       visibility: visible
+      max_files: 1
   -
     handle: other_meta_tags
     field:

@@ -413,7 +413,7 @@ block_types:
     type: companies_work_with
     enabled: true
 updated_by: fd7d2ad8-80ce-45aa-967e-ea1534917ae3
-updated_at: 1681404698
+updated_at: 1681871910
 meta_title: 'Your Page/Site Name'
 meta_description: 'Your Page Meta Description'
 meta_tags: 'Tag 1, Tag 2'
@@ -429,6 +429,15 @@ other_meta_tags:
     meta_tag_value: Author
     meta_tag_value_name: content
     meta_tag_value_name_value: 'John Doe'
+inside_page: false
+banner_text: TECHX
+banner_title: 'About Us'
+breadcrumb: |-
+  <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">team</li>
+                          </ol>
+og_image: home_hero/stock-photo-detailed-lever-on-old-lathe-645704086.jpg
 ---
 ## Welcome to your brand new Statamic site!
 

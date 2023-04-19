@@ -27,6 +27,71 @@ sections:
           listable: hidden
           instructions_position: above
           visibility: visible
+          default: |-
+            {{if meta_title}}
+                <title>{{ meta_title }}</title> 
+                {{else}}
+                <title>{{ title ?? site:name }}</title>
+                {{/if}}
+                
+                {{if meta_keywords}}
+                <meta name = "keywords" content = "{{meta_keywords}}" />
+                {{/if}}
+                
+                {{if meta_description}}
+                <meta name = "description" content = "Learning about Meta Tags." />
+                {{/if }}
+                
+                {{if other_meta_tags}}
+                
+                {{other_meta_tags}}
+                
+                <meta {{meta_tag_name}} = "{{meta_tag_value}}" {{meta_tag_value_name}} = "{{meta_tag_value_name_value}}" />
+                
+                
+                {{/other_meta_tags}}
+                
+                {{/if}}
+
+            {{if og_title}}
+            <meta property="og:title" content="{{og_title}}" />
+            {{/if}}
+            {{if og_description}}
+            <meta property="og:description" content="{{og_description}}" />
+            {{/if}}
+            {{if og_image}}
+            <meta property="og:image" content="{{site:permalink}}{{og_image}}" />
+            {{/if}}
+
+
+
+
+
+                
+                {{page_header_extra}}
+                
+                
+                <!-- ========== Favicon Icon ========== -->
+                <link rel="shortcut icon" href="{{extra_scripts:fav_icon}}">
+                <!-- ===========  All Stylesheet ================= -->
+                <!--  Icon css plugins -->
+                <link rel="stylesheet" href="/techex/assets/css/icons.css">
+                <!--  animate css plugins -->
+                <link rel="stylesheet" href="/techex/assets/css/animate.css">
+                <!--  magnific-popup css plugins -->
+                <link rel="stylesheet" href="/techex/assets/css/magnific-popup.css">
+                <!--  owl carosuel css plugins -->
+                <link rel="stylesheet" href="/techex/assets/css/owl.carousel.min.css">
+                <!-- metis menu css file -->
+                <link rel="stylesheet" href="/techex/assets/css/metismenu.css">
+                <!--  owl theme css plugins -->
+                <link rel="stylesheet" href="/techex/assets/css/owl.theme.css">
+                <!--  Bootstrap css plugins -->
+                <link rel="stylesheet" href="/techex/assets/css/bootstrap.min.css">
+                <!--  main style css file -->
+                <link rel="stylesheet" href="/techex/assets/css/style.css">
+                <!-- template main style css file -->
+                <link rel="stylesheet" href="/techex/style.css">
       -
         handle: footer_extra_scripts
         field:
@@ -37,6 +102,41 @@ sections:
           listable: hidden
           instructions_position: above
           visibility: visible
+          default: |-
+            <footer class="footer-2 footer-wrap">
+            <div class="footer-widgets">            
+                        <div class="container">
+                            <div class="row justify-content-between">
+                                <div class="col-md-6 col-xl-3 col-12 pr-xl-4">
+                                    <div class="single-footer-wid site_footer_widget">
+                                        <a href="index.html">
+                                            <img src="{{footer:footer_logo}}" alt="">
+                                        </a>
+                                        <p class="mt-4">{{footer:description}}</p>
+                                        <div class="social-link mt-30">
+                                            {{footer:social_icons}}
+                                        </div>
+                                    </div>
+                                </div> <!-- /.col-lg-3 - single-footer-wid -->
+                                <div class="col-md-6 col-xl-2 col-12">                        
+                                    <div class="single-footer-wid">
+                                        {{footer:box_2}}
+                                    </div>
+                                </div> <!-- /.col-lg-3 - single-footer-wid -->
+                                <div class="col-md-6 col-xl-2 col-12">                        
+                                    <div class="single-footer-wid">
+                                        {{footer:box_3}}
+                                    </div>
+                                </div> <!-- /.col-lg-3 - single-footer-wid -->
+                                <div class="col-md-6 col-xl-3 col-12">
+                                    <div class="single-footer-wid recent_post_widget">
+                                        {{footer:box_4}}
+                                    </div>
+                                </div> <!-- /.col-lg-3 - single-footer-wid -->
+                            </div>
+                        </div>
+                    </div>
+            </footer>
       -
         handle: footer_copyright
         field:

@@ -34,7 +34,7 @@ data:
     <meta property="og:description" content="{{og_description}}" />
     {{/if}}
     {{if og_image}}
-    <meta property="og:image" content="{{og_image}}" />
+    <meta property="og:image" content="{{site:permalink}}{{og_image}}" />
     {{/if}}
 
 
