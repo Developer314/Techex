@@ -1,7 +1,7 @@
 title: Footer
 data:
-  footer_logo: logo.png
-  description: 'Sed ut perspiciatis unde omnis natus voluptatem accusa ntiumy doloremque laudantium.omnis natus voluptatem accusa ntiumy doloremque laudantium'
+  footer_logo: screen-shot-2023-05-10-at-8.03.25-pm.png
+  description: 'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.'
   social_icons: |-
     <a href="#"><i class="fab fa-facebook-f"></i></a>
                                     <a href="#"><i class="fab fa-twitter"></i></a>
@@ -38,7 +38,7 @@ data:
                                     
                                     {{collection:news limit="2"}}
                                     <div class="single-recent-post">
-                                        <div class="thumb bg-cover" style="background-image: url('{{image}}');"></div>
+                                        <div class="thumb bg-cover" style="background-image: url('{{banner_image}}');"></div>
                                         <div class="post-data">
                                             
                                             <h5><a href="{{url}}">{{title}}</a></h5>

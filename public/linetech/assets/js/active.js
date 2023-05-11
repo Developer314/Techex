@@ -1,7 +1,4 @@
-/*
-Template: Techex - Information & Technology HTML Template
-Author: RRDevs
-*/
+
 
 (function($) {
     "use strict";
@@ -421,11 +418,11 @@ Author: RRDevs
             $(".preloader").delay(200).fadeOut();
 
             /*** AOS */
-            AOS.init({
+            /*AOS.init({
                 once: true,
                 offset: 100,
                 duration: 900,
-            });
+            });*/
         });
     }
 

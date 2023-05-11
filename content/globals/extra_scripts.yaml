@@ -1,6 +1,6 @@
 title: 'Extra Scripts'
 data:
-  fav_icon: favicon.png
+  fav_icon: favicon-1683695181.png
   header_extra_scripts: |-
     {{if meta_title}}
         <title>{{ meta_title }}</title> 
@@ -48,44 +48,52 @@ data:
         <!-- ========== Favicon Icon ========== -->
         <link rel="shortcut icon" href="{{extra_scripts:fav_icon}}">
         <!-- ===========  All Stylesheet ================= -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+
+
         <!--  Icon css plugins -->
-        <link rel="stylesheet" href="/techex/assets/css/icons.css">
+        <link rel="stylesheet" href="/linetech/assets/css/icons.css">
         <!--  animate css plugins -->
-        <link rel="stylesheet" href="/techex/assets/css/animate.css">
+        <link rel="stylesheet" href="/linetech/assets/css/animate.css">
         <!--  magnific-popup css plugins -->
-        <link rel="stylesheet" href="/techex/assets/css/magnific-popup.css">
+        <link rel="stylesheet" href="/linetech/assets/css/magnific-popup.css">
         <!--  owl carosuel css plugins -->
-        <link rel="stylesheet" href="/techex/assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="/linetech/assets/css/owl.carousel.min.css">
         <!-- metis menu css file -->
-        <link rel="stylesheet" href="/techex/assets/css/metismenu.css">
+        <link rel="stylesheet" href="/linetech/assets/css/mobile_menu.css">
         <!--  owl theme css plugins -->
-        <link rel="stylesheet" href="/techex/assets/css/owl.theme.css">
+        <link rel="stylesheet" href="/linetech/assets/css/owl.theme.css">
         <!--  Bootstrap css plugins -->
-        <link rel="stylesheet" href="/techex/assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/linetech/assets/css/bootstrap.min.css">
         <!--  main style css file -->
-        <link rel="stylesheet" href="/techex/assets/css/style.css">
+        <link rel="stylesheet" href="/linetech/assets/css/style.css">
         <!-- template main style css file -->
-        <link rel="stylesheet" href="/techex/style.css">
+        <link rel="stylesheet" href="/linetech/style.css">
   footer_extra_scripts: |-
     <!--  ALl JS Plugins
         ====================================== -->
-        <script src="/techex/assets/js/jquery.min.js"></script>
-        <script src="/techex/assets/js/modernizr.min.js"></script>
-        <script src="/techex/assets/js/jquery.easing.js"></script>
-        <script src="/techex/assets/js/popper.min.js"></script>
-        <script src="/techex/assets/js/bootstrap.min.js"></script>
-        <script src="/techex/assets/js/isotope.pkgd.min.js"></script>
-        <script src="/techex/assets/js/imageload.min.js"></script>
-        <script src="/techex/assets/js/scrollUp.min.js"></script>
-        <script src="/techex/assets/js/owl.carousel.min.js"></script>
-        <script src="/techex/assets/js/magnific-popup.min.js"></script>
-        <script src="/techex/assets/js/easypiechart.min.js"></script>
-        <script src="/techex/assets/js/counterup.min.js"></script>
-        <script src="/techex/assets/js/wow.min.js"></script>
-        <script src="/techex/assets/js/metismenu.js"></script>
-        <script src="/techex/assets/js/timeline.min.js"></script>
-        <script src="/techex/assets/js/ajax-mail.js"></script>
-        <script src="/techex/assets/js/active.js"></script>
+        <script src="/linetech/assets/js/jquery.min.js"></script>
+        <script src="/linetech/assets/js/modernizr.min.js"></script>
+        <script src="/linetech/assets/js/jquery.easing.js"></script>
+        <script src="/linetech/assets/js/popper.min.js"></script>
+        <script src="/linetech/assets/js/bootstrap.min.js"></script>
+        <script src="/linetech/assets/js/isotope.pkgd.min.js"></script>
+        <script src="/linetech/assets/js/imageload.min.js"></script>
+        <script src="/linetech/assets/js/scrollUp.min.js"></script>
+        <script src="/linetech/assets/js/owl.carousel.min.js"></script>
+        <script src="/linetech/assets/js/magnific-popup.min.js"></script>
+        <script src="/linetech/assets/js/easypiechart.min.js"></script>
+        <script src="/linetech/assets/js/counterup.min.js"></script>
+        <script src="/linetech/assets/js/wow.min.js"></script>
+        <script src="/linetech/assets/js/mobile_menu.js"></script>
+        <script src="/linetech/assets/js/timeline.min.js"></script>
+        <script src="/linetech/assets/js/ajax-mail.js"></script>
+        <script src="/linetech/assets/js/active.js"></script>
 
     {{page_footer_extra}}
   footer_copyright: '© 2023 <a href="http://www.revolve314.com" target="_blank">Revolve 314</a>. All Rights Reserved'

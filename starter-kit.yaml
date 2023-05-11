@@ -4,5 +4,5 @@ export_paths:
   - resources/forms
   - resources/views
   - resources/fieldsets
-  - public/techex
+  - public/linetech
   - public/assets

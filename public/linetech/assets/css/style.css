@@ -1,10 +1,3 @@
-/*
-Template: Techex - Information & Technology HTML Template
-Author: RRDevs
-Author URI: https://themeforest.net/user/rrdevs
-Description: Information & Technology HTML Template
-Version: 1.0
-*/
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -185,100 +178,9 @@ input, textarea, button {
   }
 }
 
-/* ------------------------------------------------------------------
-    Template All Variables Defined - Value Change with Your's Need
- -------------------------------------------------------------------- */
-@font-face {
-  font-family: "Circular Std";
-  src: url("../fonts/CircularStd-MediumItalic.eot");
-  src: local("Circular Std Medium Italic"), local("CircularStd-MediumItalic"), url("../fonts/CircularStd-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-MediumItalic.woff2") format("woff2"), url("../fonts/CircularStd-MediumItalic.woff") format("woff"), url("../fonts/CircularStd-MediumItalic.ttf") format("truetype");
-  font-weight: 500;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Circular Std";
-  src: url("../fonts/CircularStd-Black.eot");
-  src: local("Circular Std Black"), local("CircularStd-Black"), url("../fonts/CircularStd-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-Black.woff2") format("woff2"), url("../fonts/CircularStd-Black.woff") format("woff"), url("../fonts/CircularStd-Black.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Circular Std";
-  src: url("../fonts/CircularStd-Medium.eot");
-  src: local("Circular Std Medium"), local("CircularStd-Medium"), url("../fonts/CircularStd-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-Medium.woff2") format("woff2"), url("../fonts/CircularStd-Medium.woff") format("woff"), url("../fonts/CircularStd-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Circular Std";
-  src: url("../fonts/CircularStd-Bold.eot");
-  src: local("Circular Std Bold"), local("CircularStd-Bold"), url("../fonts/CircularStd-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-Bold.woff2") format("woff2"), url("../fonts/CircularStd-Bold.woff") format("woff"), url("../fonts/CircularStd-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Circular Std";
-  src: url("../fonts/CircularStd-BlackItalic.eot");
-  src: local("Circular Std Black Italic"), local("CircularStd-BlackItalic"), url("../fonts/CircularStd-BlackItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-BlackItalic.woff2") format("woff2"), url("../fonts/CircularStd-BlackItalic.woff") format("woff"), url("../fonts/CircularStd-BlackItalic.ttf") format("truetype");
-  font-weight: 900;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Circular Std Book";
-  src: url("../fonts/CircularStd-BookItalic.eot");
-  src: local("Circular Std Book Italic"), local("CircularStd-BookItalic"), url("../fonts/CircularStd-BookItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-BookItalic.woff2") format("woff2"), url("../fonts/CircularStd-BookItalic.woff") format("woff"), url("../fonts/CircularStd-BookItalic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Circular Std";
-  src: url("../fonts/CircularStd-BoldItalic.eot");
-  src: local("Circular Std Bold Italic"), local("CircularStd-BoldItalic"), url("../fonts/CircularStd-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-BoldItalic.woff2") format("woff2"), url("../fonts/CircularStd-BoldItalic.woff") format("woff"), url("../fonts/CircularStd-BoldItalic.ttf") format("truetype");
-  font-weight: bold;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Circular Std Book";
-  src: url("../fonts/CircularStd-Book.eot");
-  src: local("Circular Std Book"), local("CircularStd-Book"), url("../fonts/CircularStd-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-Book.woff2") format("woff2"), url("../fonts/CircularStd-Book.woff") format("woff"), url("../fonts/CircularStd-Book.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Nunito-Black";
-  src: local("Nunito-Black"), local("Nunito-Black"), url("../fonts/Nunito-Black.woff2") format("woff2"), url("../fonts/Nunito-Black.woff") format("woff"), url("../fonts/Nunito-Black.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Nunito-Bold";
-  src: local("Nunito-Bold"), local("Nunito-Bold"), url("../fonts/Nunito-Bold.woff2") format("woff2"), url("../fonts/Nunito-Bold.woff") format("woff"), url("../fonts/Nunito-Bold.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Nunito-SemiBold";
-  src: local("Nunito-SemiBold"), local("Nunito-SemiBold"), url("../fonts/Nunito-SemiBold.woff2") format("woff2"), url("../fonts/Nunito-SemiBold.woff") format("woff"), url("../fonts/Nunito-SemiBold.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Nunito-Regular";
-  src: local("Nunito-Regular"), local("Nunito-Regular"), url("../fonts/Nunito-Regular.woff2") format("woff2"), url("../fonts/Nunito-Regular.woff") format("woff"), url("../fonts/Nunito-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Nunito-Medium";
-  src: local("Nunito-Medium"), local("Nunito-Medium"), url("../fonts/Nunito-Medium.woff2") format("woff2"), url("../fonts/Nunito-Medium.woff") format("woff"), url("../fonts/Nunito-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-/* --------------------------------------------
-    Template Default Fonts & Fonts Styles
- ---------------------------------------------- */
+
 body {
-  font-family: "Circular Std", sans-serif;
+  font-family: 'Cinzel', serif;
   font-size: 17px;
   font-weight: 400;
   line-height: 32px;
@@ -292,7 +194,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Circular Std", sans-serif;
+  font-family: 'Cinzel', serif;
   margin: 0px;
   font-weight: 700;
   color: #211e3b;
@@ -301,7 +203,7 @@ h6 {
 h1 {
   font-size: 42px;
   line-height: 55px;
-  letter-spacing: -3px;
+  font-family: 'Cinzel', serif;: -3px;
 }
 @media (max-width: 767px) {
   h1 {
@@ -322,7 +224,7 @@ h1.fs-lg {
 h2 {
   font-size: 36px;
   line-height: 130%;
-  letter-spacing: -3px;
+  font-family: 'Cinzel', serif;: -3px;
 }
 
 h3 {
@@ -1338,10 +1240,10 @@ p {
   border-bottom: 100px solid #32557f;
   border-right: 100px solid transparent;
 }
-.triangle.triangle-bottom-right {
+/*.triangle.triangle-bottom-right {
   border-bottom: 100px solid #32557f;
   border-left: 100px solid transparent;
-}
+}*/
 
 .bg-overlay {
   position: relative;
@@ -2597,7 +2499,7 @@ a img.aligncenter {
 }
 
 .preloader .animation-preloader .txt-loading {
-  font: 700 5em "Circular Std", sans-serif, sans-serif;
+  font: 700 5em "Foldit", sans-serif, sans-serif;
   text-align: center;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -2622,7 +2524,7 @@ a img.aligncenter {
   content: attr(data-text-preloader);
   left: 0;
   opacity: 0;
-  font-family: "Circular Std", sans-serif;
+  font-family: 'Cinzel', serif;
   position: absolute;
   top: -3px;
   -webkit-transform: rotateY(-90deg);
@@ -2681,7 +2583,7 @@ a img.aligncenter {
   font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 8px;
+  font-family: 'Cinzel', serif;: 8px;
   color: #086ad7;
 }
 
@@ -3305,7 +3207,7 @@ header.header-4 {
 }
 @media (max-width: 1800px) {
   header.header-4 .container {
-    border: 1px solid #37344e;
+    
     padding: 15px 30px;
   }
 }
@@ -3871,10 +3773,6 @@ header.header-5 .main-header-wraper .header-search.show .search-box {
 header.header-5 .main-header-wraper .header-search.show .search-box .form-group:before {
   width: 100%;
 }
-header.stop .top-header {
-  -webkit-transform: translate3d(0, -100%, 0);
-  transform: translate3d(0, -100%, 0);
-}
 
 .lan-select {
   font-weight: 500;
@@ -4002,9 +3900,9 @@ header.stop .top-header {
   -webkit-text-stroke-width: 4px;
   -webkit-text-stroke-color: rgba(255, 255, 255, 0.2);
   font-size: 120px;
-  font-family: "Circular Std", sans-serif;
+  font-family: 'Cinzel', serif;
   font-weight: 900;
-  letter-spacing: -0.03em;
+  font-family: 'Cinzel', serif;: -0.03em;
   left: 110px;
   z-index: 2;
   opacity: 0.15;
@@ -4506,9 +4404,9 @@ header.stop .top-header {
   -webkit-text-stroke-width: 4px;
   -webkit-text-stroke-color: rgba(255, 255, 255, 0.2);
   font-size: 215px;
-  font-family: "Circular Std";
+  font-family: "Foldit";
   font-weight: 900;
-  letter-spacing: -0.03em;
+  font-family: 'Cinzel', serif;: -0.03em;
   left: -15px;
   z-index: 2;
   opacity: 0.15;
@@ -5004,7 +4902,7 @@ header.stop .top-header {
   }
 }
 .hero-wrapper .banner-content span {
-  font-family: "Circular Std", sans-serif;
+  font-family: 'Cinzel', serif;
   font-style: normal;
   font-weight: 900;
   font-size: 128px;
@@ -5036,38 +4934,6 @@ header.stop .top-header {
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-.hero-wrapper .banner-content a::after {
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-  clear: both;
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0%;
-  left: -51%;
-  width: 50%;
-  height: 100%;
-  background-color: rgba(0, 11, 44, 0.3333333333) !important;
-}
-.hero-wrapper .banner-content a::before {
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-  clear: both;
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0%;
-  right: -51%;
-  width: 50%;
-  height: 100%;
-  background-color: rgba(0, 11, 44, 0.3333333333) !important;
-}
-.hero-wrapper .banner-content a:hover::before {
-  right: 0%;
-}
-.hero-wrapper .banner-content a:hover::after {
-  left: 0%;
-}
 @media (max-width: 500px) {
   .hero-wrapper .banner-content a {
     text-align: center !important;
@@ -5076,11 +4942,11 @@ header.stop .top-header {
 .hero-wrapper .dots-element {
   position: absolute;
   top: 10%;
-  left: 10%;
+  left: 3% !important;
   -webkit-animation: movebounce 4s ease-in-out infinite;
           animation: movebounce 4s ease-in-out infinite;
 }
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
   .hero-wrapper .dots-element {
     display: none;
   }
@@ -5090,7 +4956,7 @@ header.stop .top-header {
   bottom: 0%;
   left: 0%;
 }
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
   .hero-wrapper .banner-element {
     display: none !important;
   }
@@ -5158,7 +5024,7 @@ header.stop .top-header {
   }
 }
 .section-title.section__title_3 h6 {
-  font-family: "Circular Std", sans-serif;
+  font-family: 'Cinzel', serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -5329,7 +5195,7 @@ header.stop .top-header {
   z-index: -1;
 }
 
-.triangle-bottom-right {
+/*.triangle-bottom-right {
   border-bottom: 200px solid #086ad7;
   border-left: 200px solid transparent;
   border-radius: 0px 0px 0px 0px;
@@ -5340,14 +5206,14 @@ header.stop .top-header {
   width: 0;
   height: 0;
   z-index: -1;
-}
+}*/
 
 .about-right-img {
   position: relative;
 }
-.about-right-img .triangle-bottom-right {
+/*.about-right-img .triangle-bottom-right {
   margin-right: -15px;
-}
+}*/
 
 .about-icon-box {
   padding: 20px 40px;
@@ -5571,7 +5437,7 @@ header.stop .top-header {
   }
 }
 .about-wrapper .about-content p {
-  font-family: "Circular Std", sans-serif;
+  font-family: 'Cinzel', serif;
   font-style: normal;
   font-weight: 450;
   font-size: 17px;
@@ -6239,7 +6105,7 @@ header.stop .top-header {
   margin-bottom: 30px;
 }
 .analytics-wrapper .service-element h4 {
-  font-family: "Circular Std", sans-serif;
+  font-family: 'Cinzel', serif;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -6249,7 +6115,7 @@ header.stop .top-header {
   margin-bottom: 20px;
 }
 .analytics-wrapper .service-element p {
-  font-family: "Circular Std", sans-serif;
+  font-family: 'Cinzel', serif;
   font-style: normal;
   font-weight: 450;
   font-size: 17px;
@@ -6459,7 +6325,7 @@ header.stop .top-header {
 @media (max-width: 767px) {
   .single-testimonial h2 {
     font-size: 26px;
-    letter-spacing: -2px;
+    
   }
 }
 @media (max-width: 375px) {
@@ -7277,21 +7143,21 @@ header.stop .top-header {
   visibility: hidden;
 }
 .project__items .project__content h4 {
-  font-family: "Circular Std", sans-serif;
+  font-family: 'Cinzel', serif;
   font-style: normal;
   font-weight: 700;
   font-size: 22px;
   line-height: 30px;
-  letter-spacing: -0.03em;
+  
   color: #FFF;
 }
 .project__items .project__content p {
   font-style: normal;
-  font-family: "Circular Std", sans-serif;
+  font-family: 'Cinzel', serif;
   font-weight: 450;
   font-size: 15px;
   line-height: 19px;
-  letter-spacing: -0.03em;
+  
   color: #FFF;
 }
 .project__items:hover .box {
@@ -7441,7 +7307,7 @@ header.stop .top-header {
   font-size: 42px;
   line-height: 1;
   padding-left: 18px;
-  letter-spacing: -1px;
+  
 }
 .single-pricing-plan .pricing p {
   color: #9a95c0;
@@ -7552,7 +7418,7 @@ header.stop .top-header {
   color: #FFF;
 }
 .price__wrapper .price__element .price__head .price__range p {
-  font-family: "Circular Std", sans-serif;
+  font-family: 'Cinzel', serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -7570,7 +7436,7 @@ header.stop .top-header {
   top: 25%;
 }
 .price__wrapper .price__element .preice__body .cetagory__element h4 {
-  font-family: "Circular Std", sans-serif;
+  font-family: 'Cinzel', serif;
   font-style: normal;
   font-weight: 500;
   font-size: 30px;
@@ -7579,7 +7445,7 @@ header.stop .top-header {
   color: #FFF;
 }
 .price__wrapper .price__element .preice__body .cetagory__element p {
-  font-family: "Circular Std", sans-serif;
+  font-family: 'Cinzel', serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -7727,7 +7593,7 @@ header.stop .top-header {
 }
 .cta-banner.style-3 .container-fluid h1 {
   font-weight: 900;
-  letter-spacing: -0.03em;
+  
 }
 @media (max-width: 767px) {
   .cta-banner.style-3 .container-fluid h1 {
@@ -8396,7 +8262,7 @@ header.stop .top-header {
   font-size: 28px;
   margin-bottom: 10px;
   line-height: 130%;
-  letter-spacing: 0px;
+  font-family: 'Cinzel', serif;: 0px;
 }
 .member-details-wrap .member-skills p, .member-details-wrap .member-about p {
   margin-top: 15px;
@@ -8974,7 +8840,7 @@ header.stop .top-header {
   margin-bottom: 30px;
 }
 .prosess-wrapper .prosess-element h4 {
-  font-family: "Circular Std", sans-serif;
+  font-family: 'Cinzel', serif;
   font-style: normal;
   font-weight: 700;
   font-size: 22px;
@@ -9048,7 +8914,7 @@ header.stop .top-header {
   }
 }
 .funfact-wrapper_2 .single-funfact-item h3 {
-  font-family: "Circular Std", sans-serif;
+  font-family: 'Cinzel', serif;
   font-style: normal;
   font-weight: 700;
   font-size: 60px;
@@ -9060,7 +8926,7 @@ header.stop .top-header {
   content: "" !important;
 }
 .funfact-wrapper_2 .single-funfact-item p {
-  font-family: "Circular Std", sans-serif;
+  font-family: 'Cinzel', serif;
   font-style: normal;
   font-weight: 450;
   font-size: 16px;
@@ -9414,7 +9280,7 @@ header.stop .top-header {
   left: 10px;
 }
 .single-blog-card .future-elem p {
-  font-family: "Circular Std", sans-serif;
+  font-family: 'Cinzel', serif;
   font-style: normal;
   font-weight: 450;
   font-size: 17px;
@@ -9562,7 +9428,7 @@ header.stop .top-header {
   color: #fff;
   font-size: 26px;
   line-height: 1.4;
-  font-family: "Circular Std", sans-serif;
+  font-family: 'Cinzel', serif;
   font-weight: 400;
   padding: 60px;
   text-align: left;
@@ -10300,7 +10166,7 @@ header.stop .top-header {
   margin-right: 15px;
 }
 .agent__wrapper .agent-item .agent-content .agent-content_name h4 {
-  font-family: "Circular Std", sans-serif;
+  font-family: 'Cinzel', serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -10312,7 +10178,7 @@ header.stop .top-header {
   margin: 5px 0px;
 }
 .agent__wrapper .agent-item p {
-  font-family: "Circular Std", sans-serif;
+  font-family: 'Cinzel', serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -10668,7 +10534,7 @@ header.stop .top-header {
   margin: 20px 0px;
 }
 .contact_form__wrapper .contact__detels .content h4 {
-  font-family: "Circular Std", sans-serif;
+  font-family: 'Cinzel', serif;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -10784,7 +10650,7 @@ header.stop .top-header {
 }
 .blog-section.techex-landing-page .section-title h1 {
   font-weight: 700;
-  letter-spacing: -0.03em;
+  font-family: 'Cinzel', serif;: -0.03em;
 }
 @media (max-width: 767px) {
   .blog-section.techex-landing-page .section-title h1 {
@@ -10877,7 +10743,7 @@ header.stop .top-header {
 }
 .our-team-wrapper.techex-landing-page .section-title h1 {
   font-weight: 700;
-  letter-spacing: -0.03em;
+  font-family: 'Cinzel', serif;: -0.03em;
 }
 @media (max-width: 767px) {
   .our-team-wrapper.techex-landing-page .section-title h1 {
@@ -10959,7 +10825,7 @@ header.stop .top-header {
 }
 .our-service-provide.techex-landing-page .section-title h1 {
   font-weight: 700;
-  letter-spacing: -0.03em;
+  font-family: 'Cinzel', serif;: -0.03em;
 }
 @media (max-width: 767px) {
   .our-service-provide.techex-landing-page .section-title h1 {
@@ -11017,7 +10883,7 @@ header.stop .top-header {
 }
 .we-provide-solutions .section-title h1 {
   font-weight: 700;
-  letter-spacing: -0.03em;
+  font-family: 'Cinzel', serif;: -0.03em;
 }
 @media (max-width: 767px) {
   .we-provide-solutions .section-title h1 {
@@ -11228,7 +11094,7 @@ header.stop .top-header {
 }
 .project-case-study-wrapper.techex-landing-page .section-title h1 {
   font-weight: 700;
-  letter-spacing: -0.03em;
+  font-family: 'Cinzel', serif;: -0.03em;
 }
 @media (max-width: 767px) {
   .project-case-study-wrapper.techex-landing-page .section-title h1 {
@@ -11453,7 +11319,7 @@ header.stop .top-header {
 }
 .testimonial-wrapper.techex-landing-page .section-title h1 {
   font-weight: 700;
-  letter-spacing: -0.03em;
+  font-family: 'Cinzel', serif;: -0.03em;
 }
 @media (max-width: 767px) {
   .testimonial-wrapper.techex-landing-page .section-title h1 {
@@ -11502,7 +11368,7 @@ header.stop .top-header {
   font-size: 28px;
   line-height: 38px;
   color: #696969;
-  letter-spacing: 0;
+  font-family: 'Cinzel', serif;: 0;
   font-style: normal;
 }
 @media (max-width: 991px) {
@@ -11679,7 +11545,7 @@ header.stop .top-header {
   max-width: 460px;
   font-weight: 700;
   margin-bottom: 15px;
-  letter-spacing: -0.03em;
+  font-family: 'Cinzel', serif;: -0.03em;
 }
 @media (max-width: 767px) {
   .about-wrapper.techex-landing-page .section-title h1 {
@@ -11917,7 +11783,7 @@ header.stop .top-header {
   font-weight: 700;
   line-height: 80px;
   margin-bottom: 15px;
-  letter-spacing: -0.03em;
+  font-family: 'Cinzel', serif;: -0.03em;
 }
 @media (max-width: 1366px) {
   .hero-slide-wrapper.techex-landing-page .single-slide .hero-contents h1 {
@@ -12538,7 +12404,7 @@ header.stop .top-header {
   margin-right: 5px;
 }
 .recent_post_widget .recent-post-list .single-recent-post .post-data h5 {
-  letter-spacing: -1px;
+  font-family: 'Cinzel', serif;: -1px;
 }
 .recent_post_widget .recent-post-list .single-recent-post .post-data h5:hover {
   color: #086ad7;

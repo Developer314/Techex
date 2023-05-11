@@ -120,6 +120,122 @@ block_types:
           </section>
     type: home_hero
     enabled: true
+    hero_3_template: |-
+      {{hero_3}}
+      <section class="hero-slide-wrapper hero-3">
+              <div class="hero-slider-3">
+                  <div class="single-slide bg-cover" style="background-image: url('{{background_image}}')">
+                      <div class="container">
+                          <div class="row align-items-center">
+                              <div class="col-12 col-lg-8 mt-5 mt-lg-0 order-2 order-lg-1 text-center text-lg-left">
+                                  <div class="hero-contents text-white">
+                                      <p>{{title_1}}</p>
+                                      <h1>{{title_2}} <br> {{title_3}}</h1>
+                                      <a href="{{button_1_link}}" target="{{button_1_target}}" class="theme-btn">{{button_1_text}} <i class="fas fa-arrow-right"></i></a>
+                                      <a href="{{button_2_link}}" target="{{button_2_target}}" class="theme-btn minimal-btn">{{button_2_text}} <i class="fas fa-arrow-right"></i></a>
+                                  </div>
+                              </div>
+                              <div class="col-lg-4 col-12 order-1 order-lg-2 text-center text-lg-right">
+                                  <div class="video-play-btn">
+                                      <a href="{{youtube_link}}" class="play-video popup-video"><i class="fas fa-play"></i></a>                     
+                                  </div> 
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+      {{/hero_3}}
+    hero_4_template: |-
+      {{hero_4}}
+      <section class="hero-slide-wrapper hero-4">
+              <div class="hero-slider">
+                  <div class="single-slide bg-cover">
+                      <div class="container">
+                          <div class="row align-items-center">
+                              <div class="col-12 col-lg-6">
+                                  <div class="hero-contents">
+                                      <span>{{title_1}}</span>
+                                      <h1>{{title_2}}</h1>
+                                      <p>{{title_3}}</p>
+                                      <a href="{{button_1_link}}" target="{{button_1_target}}" class="theme-btn">{{button_1_text}} <i class="fas fa-arrow-right"></i></a>
+                                      <a href="{{button_2_link}}" target="{{button_2_target}}" class="theme-btn minimal-btn">{{button_2_text}} <i class="fas fa-arrow-right"></i></a>
+                                  </div>
+                              </div>
+                              <div class="col-lg-6 mt-5 mt-lg-0 col-12 pl-lg-5">
+                                  <div class="hero-banner">
+                                      <div class="dot"></div>
+                                      <img src="{{image}}" alt="{{title_1}}">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="small-elements"></div>
+                  </div>
+              </div>
+          </section>
+      {{/hero_4}}
+    hero_5_template: |-
+      <section class="hero-slide-wrapper techex-landing-page">
+              <div class="hero-slider-active-2 owl-carousel owl-theme">
+      	        
+      	        
+      	        {{hero_5}}
+                  <div class="single-slide bg-cover" style="background-image: url('{{background_image}}')">
+                      <div class="container">
+                          <div class="row">
+                              <div class="col-12">
+                                  <div class="hero-contents text-center">
+                                      <a class="theme-btn-sm" data-animation="fadeInUp" data-delay="0">{{title_1}}</a>
+                                      <h1 data-animation="fadeInUp" data-delay="0.4s">{{title_2}}</h1>
+                                      <div data-animation="fadeInUp" data-delay="0.6s">
+                                          <p>{{title_3}}</p>
+                                      </div>
+                                      
+                                      <div class="btn__wrapper d-flex flex-wrap justify-content-center" data-animation="fadeInUp" data-delay="0.8s">
+                                          <a href="{{button_1_link}}" target="{{button_1_target}}" class="theme-btn">{{button_1_text}}<i class="icon-arrow-right-1"></i></a>
+                                          <a href="{{button_2_link}}" target="{{button_2_target}}" class="theme-btn">{{button_2_text}} <i class="icon-arrow-right-1"></i></a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  {{/hero_5}}
+
+                  
+              </div>
+          </section>
+    hero_6_template: |-
+      {{hero_6}}
+      <section class="hero-wrapper section-padding-3">
+              <div class="container">
+                  <div class="row align-items-center">
+                      <div class="col-md-12 col-lg-6">
+                          <div class="banner-content">
+                              <h2 data-aos="fade-up">{{title_2}} <br> {{title_3}} <br> {{title_3}}</h2>
+                              <span>{{title_1}}</span>
+                              <a data-aos="fade-up" data-aos-delay="100" href="{{button_link}}" target="{{button_target}}" class="theme-btn mt-40">{{button_text}} <i class="icon-arrow-right-1"></i></a>
+                          </div>
+                      </div>
+                      <div class="col-md-12 col-lg-6">
+                          <div class="banner-img">
+                              <img src="{{image}}" alt="{{title_2}} {{title_3}}  {{title_3}}">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="dots-element">
+                  <img src="{{dot_image}}" alt>
+              </div>
+              <div class="banner-element ">
+                  <img src="{{object_image}}" alt>
+              </div>
+              <div class="banner-element-2">
+                  <img src="{{banner_image}}" alt>
+              </div>
+          </section>
+      {{/hero_6}}
   -
     id: lgfd49nz
     image: home_hero/stock-photo-detailed-lever-on-old-lathe-645704086.jpg
@@ -272,7 +388,7 @@ block_types:
       	            {{collection:news limit="3"}}
                       <div class="col-xl-4 col-md-6 col-12">
                           <div class="single-blog-card">
-                              <div class="blog-featured-thumb bg-cover" style="background-image: url('{{image}}')"></div>
+                              <div class="blog-featured-thumb bg-cover" style="background-image: url('{{banner_image}}')"></div>
                               <div class="content">
                                   <div class="post-author">
                                       <a href="{{url}}"><i class="fal fa-user-circle"></i>{{author}}</a>
@@ -293,7 +409,7 @@ block_types:
     type: latest_news
     enabled: true
 updated_by: fd7d2ad8-80ce-45aa-967e-ea1534917ae3
-updated_at: 1681640021
+updated_at: 1683791467
 template: home
 meta_title: 'Your Page/Site Name'
 meta_description: 'Your Page Meta Description'

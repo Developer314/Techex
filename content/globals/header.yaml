@@ -1,6 +1,6 @@
 title: Header
 data:
-  site_logo: logo.png
+  site_logo: logo-1683692148.png
   button_link: 'http://www.revolve314.com'
   button_link_text: Consultancy
   button_target: _blank
@@ -25,26 +25,17 @@ data:
       id: lfw5zhts
       icon: fa-youtube
       url: 'http://www.facebook.com'
-  address: '55 Clark St, Brooklyn, NY 11201, USA'
+  address: '2nd Floor , Nila Building, Revolve314'
   spinner_loading: |-
-    <span data-text-preloader="T" class="letters-loading"> 
-                            T
+    <!--<span data-text-preloader="3" class="letters-loading"> 
+                            3
                         </span>
-                        <span data-text-preloader="E" class="letters-loading">
-                            E
+                        <span data-text-preloader="1" class="letters-loading">
+                            1
                         </span>
-                        <span data-text-preloader="C" class="letters-loading">
-                            C
-                        </span>
-                        <span data-text-preloader="H" class="letters-loading">
-                            H
-                        </span>
-                        <span data-text-preloader="E" class="letters-loading">
-                            E
-                        </span>
-                        <span data-text-preloader="X" class="letters-loading">
-                            X
-                        </span>
+                        <span data-text-preloader="4" class="letters-loading">
+                            4
+                        </span>-->
   sitemenu: |-
     <ul>
                                 <li><a href="/">Home <i class="fas fa-angle-down"></i></a> 
@@ -68,7 +59,7 @@ data:
                                     </ul>
                                 </li>
                                 <li><a href="/news">News</a></li>
-                                <li><a href="contact">Contact</a></li>
+                                <li><a href="/contact">Contact</a></li>
                             </ul>
   mobile_menu: |-
     <ul class="metismenu" id="mobile-menu"> 
@@ -93,9 +84,9 @@ data:
                                     </ul>
                                 </li>
                                 <li><a href="/news">News</a></li>
-                                <li><a href="contact">Contact</a></li>
+                                <li><a href="/contact">Contact</a></li>
                                     </ul>
-  h1_logo: logo.png
+  h1_logo: logo-1683692148.png
   header_1: |-
     <header class="header-wrap header-1">
             <div class="container">
@@ -141,7 +132,7 @@ data:
                 </div>
             </div>
         </header>
-  h2_logo: logo-2.png
+  h2_logo: logo-2-1683692461.png
   header_2: |-
     <header class="header-wrap header-2"> 
             <div class="top-header d-none d-md-block">  
@@ -167,17 +158,7 @@ data:
                                     
                                     {{/header:social_icons}}
                                 </div>
-                                |
-                                <div class="lan-select ml-30">
-                                    <form>
-                                        <select id="lan">
-                                            <option>English</option>
-                                            <option>China</option>
-                                            <option>Bangla</option>
-                                            <option>Hindi</option>
-                                        </select>
-                                    </form>
-                                </div>
+                               
                             </div>
                         </div>
                     </div>
@@ -231,10 +212,10 @@ data:
                 </div>
             </div>
         </header>
-  h3_logo: logo.png
+  h3_logo: logo-1683692148.png
   header_3: |-
     <header class="header-wrap header-3">
-            <div class="top-header">
+            <!--<div class="top-header">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 col-12 text-center">
@@ -244,7 +225,7 @@ data:
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
 
             <div class="middle-header-wraper">
                 <div class="container-fluid">
@@ -337,7 +318,7 @@ data:
                 </div>
             </div>
         </header>
-  h4_logo: logo-2.png
+  h4_logo: screen-shot-2023-05-10-at-7.50.04-pm.png
   header_4: |-
     <header class="header-wrap header-4"> 
             <div class="top-header d-none d-lg-block">
@@ -363,17 +344,7 @@ data:
                                     
                                     {{/header:social_icons}}
                                 </div>
-                                |
-                                <div class="lan-select ml-30">
-                                    <form>
-                                        <select id="lan">
-                                            <option>English</option>
-                                            <option>China</option>
-                                            <option>Bangla</option>
-                                            <option>Hindi</option>
-                                        </select>
-                                    </form>
-                                </div>
+                               
                             </div>
                         </div>
                     </div>
@@ -427,7 +398,7 @@ data:
                 </div>
             </div>
         </header>
-  h5_logo: logo.png
+  h5_logo: logo-1683693673.png
   header_5: |-
     <header class="header-wrap header-5">
             <div class="top-header d-none d-md-block">
@@ -450,17 +421,7 @@ data:
                                     
                                     {{/header:social_icons}}
                                 </div>
-                                |
-                                <div class="lan-select">
-                                    <form>
-                                        <select id="lan">
-                                            <option>English</option>
-                                            <option>China</option>
-                                            <option>Bangla</option>
-                                            <option>Hindi</option>
-                                        </select>
-                                    </form>
-                                </div>
+                               
                             </div>
                         </div>
                     </div>
@@ -528,10 +489,10 @@ data:
             </div>
         </header>
         <div class="header-gutter"></div><!-- /header-gutter -->
-  h6_logo: logo.png
+  h6_logo: logo-1683693673.png
   header_6: |-
     <header class="header-wrap header-5">
-            <div class="top-header d-none d-md-block">
+           <div class="top-header d-none d-md-block">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-7">
