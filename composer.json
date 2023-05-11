@@ -2,8 +2,8 @@
     "name": "developer314/techex",
     "extra": {
         "statamic": {
-            "name": "Techex Starter Kit",
-            "description": "Techex Starter Kit"
+            "name": "LineEx Starter Kit",
+            "description": "LineEx Starter Kit"
         }
     }
 }
